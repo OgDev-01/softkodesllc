@@ -1,0 +1,91 @@
+.img-card-wrap {
+  width: 100%;
+  height: auto;
+  margin: {
+    left: auto;
+    right: auto;
+    top: 150px;
+  }
+  padding: 40px 200px;
+  // background: green;
+
+  .card-wrap {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      width: 28%;
+      height: 380px;
+      //   background: red;
+
+      &:nth-child(2) {
+        margin-top: 55px;
+      }
+      .card-head-one {
+        background: url(/images/badass-1.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-two {
+        background: url(/images/badass-2.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-three {
+        background: url(/images/badass-3.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-four {
+        background: url(/images/badass-4.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-five {
+        background: url(/images/badass-5.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-six {
+        background: url(/images/badass-6.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-seven {
+        background: url(/images/badass-7.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-eight {
+        background: url(/images/badass-8.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+      .card-head-nine {
+        background: url(/images/badass-9.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80%;
+      }
+    }
+  }
+}

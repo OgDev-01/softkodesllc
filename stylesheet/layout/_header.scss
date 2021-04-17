@@ -1,0 +1,109 @@
+// header style
+.header {
+  width: 100%;
+  height: 40px;
+  padding: 20px 0;
+  @media screen and (min-width: 44em) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  a {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+    /* identical to box height */
+
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 0;
+  }
+
+  .logo-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media screen and(min-width: 44em) {
+      width: 30%;
+      // background: red;
+    }
+    .logo {
+      background: url(/images/logo.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 50px;
+      height: 40px;
+      z-index: 99;
+      position: relative;
+      top: 5px;
+    }
+  }
+  .burger-menu {
+    width: 40px;
+    height: 40px;
+    // background: black;
+    border: 1px solid #000000;
+    display: inline-block;
+    margin-left: auto;
+
+    @media screen and (min-width: 44em) {
+      display: none;
+    }
+  }
+
+  .nav-list {
+    display: block;
+    text-align: center;
+    // background: red;
+    height: 100vh;
+    width: 100%;
+    // position: relative;
+    z-index: 9;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+
+    @media screen and (min-width: 44em) {
+      display: flex;
+      height: auto;
+      // background-color: green;
+      width: 28%;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 50px;
+      opacity: 1;
+    }
+
+    li {
+      list-style: none;
+      @media screen and (min-width: 44em) {
+        width: calc(100% / 3);
+      }
+      &:hover ~ .cursor-custom {
+        transform: scale(6);
+      }
+      a {
+        padding: 10px 0;
+        display: block;
+        cursor: pointer;
+        // background-color: wheat;
+        // border-right: 1px solid black;
+      }
+    }
+  }
+
+  .open {
+    opacity: 1;
+    max-height: 100vh;
+    transition: all 0.5s ease-in-out;
+  }
+}
