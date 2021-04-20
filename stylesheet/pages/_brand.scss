@@ -1,24 +1,44 @@
 h1 {
-  width: 70%;
+  width: 100%;
   margin: {
     left: auto;
     right: auto;
   }
-  line-height: 130px;
+  line-height: 60px;
+  padding: 50px;
   &:after {
     content: "";
     display: block;
     width: 0;
   }
+  @media screen and (min-width: 44em) {
+    width: 70%;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    line-height: 130px;
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+    }
+  }
 }
 .brand-img {
   width: 70vw;
   height: 80vh;
-  background: url(/images/brand.png) no-repeat;
+  background: url(/images/brand-mobile.png) no-repeat;
   background-size: 100% 100%;
   margin: {
     left: auto;
     right: auto;
     top: 150px;
+  }
+
+  @media screen and (min-width: 44em) {
+    // background: url(/images/brand-mobile.png);
+    background: url(/images/brand.png) no-repeat;
+    background-size: 100% 100%;
   }
 }

@@ -1443,7 +1443,7 @@ figure {
   line-height: 100px;
   letter-spacing: -0.03em;
   color: #f8fdff;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   text-decoration: none;
 }
 
@@ -1805,7 +1805,7 @@ figure {
 .news-letter {
   width: 100%;
   margin-top: 150px;
-  padding: 60px 0;
+  padding: 0px 0;
 }
 
 @media screen and (min-width: 44em) {
@@ -2041,10 +2041,11 @@ figure {
 }
 
 h1 {
-  width: 70%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  line-height: 130px;
+  line-height: 60px;
+  padding: 50px;
 }
 
 h1:after {
@@ -2053,14 +2054,35 @@ h1:after {
   width: 0;
 }
 
+@media screen and (min-width: 44em) {
+  h1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 130px;
+  }
+  h1:after {
+    content: "";
+    display: block;
+    width: 0;
+  }
+}
+
 .brand-img {
   width: 70vw;
   height: 80vh;
-  background: url(/images/brand.png) no-repeat;
+  background: url(/images/brand-mobile.png) no-repeat;
   background-size: 100% 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
+}
+
+@media screen and (min-width: 44em) {
+  .brand-img {
+    background: url(/images/brand.png) no-repeat;
+    background-size: 100% 100%;
+  }
 }
 
 .img-card-wrap {
@@ -2069,23 +2091,58 @@ h1:after {
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
-  padding: 40px 200px;
+}
+
+@media screen and (min-width: 44em) {
+  .img-card-wrap {
+    padding: 40px 200px;
+  }
 }
 
 .img-card-wrap .card-wrap {
   width: 100%;
-  height: 550px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 44em) {
+  .img-card-wrap .card-wrap {
+    width: 100%;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .img-card-wrap .card-wrap .card {
-  width: 28%;
-  height: 380px;
+  width: 100%;
+  height: 390px;
+}
+
+@media screen and (min-width: 44em) {
+  .img-card-wrap .card-wrap .card {
+    width: 28%;
+    height: 390px;
+  }
 }
 
 .img-card-wrap .card-wrap .card:nth-child(2) {
@@ -2162,6 +2219,43 @@ h1:after {
   background-repeat: no-repeat;
   width: 100%;
   height: 80%;
+}
+
+.img-card-wrap .card-wrap .card .card-foot {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.img-card-wrap .card-wrap .card .card-foot h6 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.img-card-wrap .card-wrap .card .card-foot span {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 0.8;
+  color: #000000;
 }
 
 * {
@@ -2271,7 +2365,7 @@ h1:after {
 
 .subscribe {
   width: 100%;
-  height: 400px;
+  height: auto;
   background: url(/images/newsletter-bg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -2280,10 +2374,11 @@ h1:after {
 @media screen and (min-width: 44em) {
   .subscribe {
     width: 100%;
-    height: 550px;
+    height: auto;
     background: url(/images/newsletter-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    padding-bottom: 80px;
   }
 }
 
@@ -2386,6 +2481,14 @@ h1:after {
   margin-top: 250px;
 }
 
+@media screen and (min-width: 44em) {
+  .brand {
+    width: 100vw;
+    height: auto;
+    margin-top: 250px;
+  }
+}
+
 .badass {
   width: 100%;
   height: auto;
@@ -2393,6 +2496,12 @@ h1:after {
 }
 
 .badass h1 {
-  width: 60%;
+  width: 100%;
+}
+
+@media screen and (min-width: 44em) {
+  .badass h1 {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
