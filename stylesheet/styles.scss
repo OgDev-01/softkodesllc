@@ -22,7 +22,7 @@
 
 // About page style import
 @import "./pages/1st-section";
-@import "./pages/2nd-section";
+@import "./pages/deeds";
 @import "./pages/brand";
 @import "./pages/badass";
 @import "./pages/5th-section";
@@ -261,6 +261,38 @@
     width: 100%;
     @media screen and (min-width: 44em) {
       width: 60%;
+    }
+  }
+}
+
+.what-we-do-wrap {
+  width: 100%;
+  height: auto;
+  margin-top: 200px;
+
+  .things {
+    margin-left: 30px;
+    margin-bottom: 100px;
+  }
+  h3 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 153.8%;
+    color: #000000;
+    width: 85%;
+    text-align: center;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 200px;
+      bottom: 200px;
+    }
+    @media screen and(min-width: 44em) {
+      width: 75%;
+      font-size: 60px;
+      line-height: 80px;
     }
   }
 }

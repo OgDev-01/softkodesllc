@@ -166,9 +166,27 @@
     /* identical to box height, or 32px */
     text-align: center;
     letter-spacing: -0.01em;
-    padding: 70px; // color: #ffffff;
+    padding: 25px; // color: #ffffff;
     span {
       opacity: 0.8;
+    }
+    @media screen and(min-width: 44em) {
+      margin-top: 150px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      color: #ffffff;
+      font-family: "DM Sans", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 159.2%;
+      /* identical to box height, or 32px */
+      text-align: center;
+      letter-spacing: -0.01em;
+      padding: 60px; // color: #ffffff;
     }
   }
 }
