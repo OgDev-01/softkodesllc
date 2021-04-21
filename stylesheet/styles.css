@@ -72,7 +72,6 @@
   z-index: 99;
   background: #f8fdff;
   overflow: hidden;
-  display: none;
 }
 
 .wait {
@@ -509,6 +508,20 @@ blockquote {
   }
 }
 
+@media screen and (max-width: 44em) {
+  blockquote .serve {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 80px;
+    /* identical to box height */
+    text-align: left;
+    color: #000000;
+    padding: 0;
+  }
+}
+
 blockquote h1 {
   font-size: 55px;
   line-height: 150px;
@@ -520,6 +533,31 @@ blockquote h1 {
 }
 
 @media screen and (min-width: 44em) {
+  blockquote h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 110px;
+    line-height: 200px;
+    /* identical to box height */
+    text-align: left;
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 44em) {
+  blockquote h1 {
+    font-size: 55px;
+    line-height: 150px;
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 44em) and (min-width: 44em) {
   blockquote h1 {
     font-family: "Playfair Display";
     font-style: normal;
@@ -665,7 +703,13 @@ h1 {
   }
 }
 
-h1:after {
+.works {
+  padding: 0 !important;
+  line-height: 100px !important;
+  width: 100%;
+}
+
+.works:after {
   content: "";
   width: 90%;
   opacity: 0.8;
@@ -674,30 +718,42 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  h1:after {
+  .works:after {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 44em) {
+  .works {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 140px !important;
   }
 }
 
 .image-slider-wrap-outer {
   position: absolute;
-  width: 60vh;
-  height: 100vw;
+  width: 80vh;
+  height: 90vw;
   -webkit-transform: rotate(-90deg) translateX(-100vh);
           transform: rotate(-90deg) translateX(-100vh);
   -webkit-transform-origin: top left;
           transform-origin: top left;
-  overflow-x: hidden;
+  overflow-x: scroll;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
-.image-slider-wrap-outer::-webkit-scrollbar {
+.image-slider-wrap-outer ::-webkit-scrollbar {
   display: none;
 }
 
 @media screen and (min-width: 44em) {
   .image-slider-wrap-outer {
-    width: 95vh;
+    width: 100vh;
     height: 80vw;
     -webkit-transform: rotate(-90deg) translateX(-120vh);
             transform: rotate(-90deg) translateX(-120vh);
@@ -725,21 +781,21 @@ h1:after {
 @media screen and (min-width: 44em) {
   .image-slider-wrap-outer .wrapper-inner {
     width: 260vw;
-    -webkit-transform: rotate(90deg) translateY(-90vh);
-            transform: rotate(90deg) translateY(-90vh);
+    -webkit-transform: rotate(90deg) translateY(-100vh);
+            transform: rotate(90deg) translateY(-100vh);
   }
 }
 
 .image-slider-wrap-outer .wrapper-inner li {
-  width: 60vw;
-  height: 80vh;
+  width: 80vw;
+  height: 75vh;
   list-style: none;
 }
 
 @media screen and (min-width: 44em) {
   .image-slider-wrap-outer .wrapper-inner li {
     width: 40vw;
-    height: 90vh;
+    height: 100vh;
   }
 }
 
@@ -768,7 +824,7 @@ h1:after {
 @media screen and (min-width: 44em) {
   .image-slider-wrap-outer .wrapper-inner li a {
     width: 100%;
-    height: 80%;
+    height: 75%;
   }
 }
 
@@ -797,6 +853,13 @@ h1:after {
   height: 20%;
 }
 
+@media screen and (min-width: 44em) {
+  .image-slider-wrap-outer .wrapper-inner li .card-foot {
+    width: 100%;
+    height: 25%;
+  }
+}
+
 .highlight {
   font-family: "Rubik";
   font-style: normal;
@@ -819,9 +882,16 @@ h1:after {
     line-height: 71px;
     letter-spacing: -0.05em;
     position: relative;
-    top: 500px;
+    top: 600px;
+    left: -70px;
     z-index: 8;
     color: #000000;
+  }
+}
+
+@media screen and (max-width: 44em) {
+  .also {
+    display: none;
   }
 }
 
@@ -2549,7 +2619,7 @@ h1:after {
 
 .section-three {
   width: 100%;
-  height: 1200px;
+  height: 900px;
   overflow-x: hidden;
   overflow-y: hidden;
   padding-left: 25px;
@@ -2557,7 +2627,7 @@ h1:after {
 
 @media screen and (min-width: 44em) {
   .section-three {
-    padding: 50px 10px 300px 250px;
+    padding: 50px 10px 100px 250px;
   }
 }
 

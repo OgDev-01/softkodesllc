@@ -98,14 +98,14 @@
 
 .section-three {
   width: 100%;
-  height: 1200px;
+  height: 900px;
   // background: yellow;
   overflow-x: hidden;
   overflow-y: hidden;
   padding-left: 25px;
 
   @media screen and (min-width: 44em) {
-    padding: 50px 10px 300px 250px;
+    padding: 50px 10px 100px 250px;
   }
 }
 
