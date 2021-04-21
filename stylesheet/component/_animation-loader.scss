@@ -14,7 +14,7 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 29px;
   /* identical to box height */
   letter-spacing: -0.03em;
@@ -22,7 +22,7 @@
   position: relative;
   display: none;
   // transform: translate(170px, 100px);
-  top: 230px;
+  top: 250px;
   left: 10px;
 
   @media screen and (min-width: 44em) {
@@ -45,11 +45,11 @@
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 40px;
   line-height: 54px;
   color: #000000;
   position: relative;
-  top: 40%;
+  top: 45%;
   // background-color: red;
   text-align: left;
   // display: none;
@@ -76,7 +76,7 @@
   margin-bottom: 15px;
   font-family: "Playfair Display", sans-serif;
   position: relative;
-  top: 50%;
+  top: 46%;
   left: 10%;
   width: fit-content;
   display: none;
@@ -107,7 +107,7 @@
   padding: 3px;
   box-sizing: border-box;
   position: relative;
-  transform: translateY(280px);
+  transform: translateY(260px);
   // display: none;
 
   @media screen and (min-width: 44em) {
