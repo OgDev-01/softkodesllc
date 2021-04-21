@@ -122,8 +122,8 @@
 
 @media screen and (min-width: 44em) {
   .experience {
-    font-size: 120px;
-    text-align: center;
+    font-size: 100px;
+    text-align: left;
     line-height: 134px;
     top: 20%;
   }
@@ -183,6 +183,8 @@
 @media screen and (min-width: 44em) {
   .progress-bar {
     padding: 3px;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
   }
 }
 
@@ -2212,7 +2214,7 @@ figure {
 
 @media screen and (min-width: 44em) {
   .what-we-do .deeds .img-deed-wrap {
-    width: 40%;
+    width: 45%;
     height: 100%;
   }
 }
@@ -2307,6 +2309,12 @@ figure {
     margin-top: 50px;
     margin-left: 0;
   }
+}
+
+.what-we-do .deed-two .img-deed-wrap {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .what-we-do .deed-two {
