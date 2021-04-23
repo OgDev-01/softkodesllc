@@ -1,6 +1,7 @@
 $(function () {
   
   function progress() {
+    // $(window).css("scroll-behaviour", "none");
     var percent = document.querySelector(".percent");
     var progress = document.querySelector(".progress");
     var text = document.querySelector(".text");
@@ -30,6 +31,7 @@ $(function () {
         percent.textContent = count + "%";
       }
     }
+    // $(window).css("scroll-behaviour", "auto");
   }
   
   progress();

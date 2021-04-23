@@ -30,6 +30,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
   </head>
   <body>
     <div class="cursor-custom"></div>
@@ -55,16 +59,16 @@
         <nav class="header">
           <div class="logo-wrap">
             <a href="#" class="logo"></a>
-
-            <div class="burger-menu">
-              <div class="icon"></div>
-              <div class="icon"></div>
+            <div class="burger-menu" id="burger">
+              <div class="nav-icon ist" id="icon-1"></div>
+              <!-- <div class="nav-icon trd" id="icon-2"></div> -->
+              <div class="nav-icon third" id="icon-3"></div>
             </div>
           </div>
-          <ul class="nav-list">
+          <ul class="nav-list" id="list-items">
             <li class="nav-item"><a href="#">Work</a></li>
             <li class="nav-item"><a href="./services.html">Services</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li class="nav-item"><a href="./about.html">About</a></li>
           </ul>
         </nav>
 
@@ -159,45 +163,43 @@
       <!-- Image slider section -->
       <section class="section-three">
         <h1 class="works">Works</h1>
-        <div class="image-slider-wrap-outer">
-          <div class="wrapper-inner">
-            <li class="li-one">
-              <a href="#" class="a-one">
-                <div class="phone"></div>
-              </a>
-              <div class="card-foot">
-                <div class="right-f"></div>
-                <div class="left-f"></div>
-              </div>
-            </li>
-            <li class="li-two">
-              <a href="#" class="a-two">
-                <div class="phone"></div>
-              </a>
-              <div class="card-foot">
-                <div class="right-f"></div>
-                <div class="left-f"></div>
-              </div>
-            </li>
-            <li class="li-three">
-              <a href="#" class="a-three">
-                <div class="phone"></div>
-              </a>
-              <div class="card-foot">
-                <div class="right-f"></div>
-                <div class="left-f"></div>
-              </div>
-            </li>
-            <li class="">
-              <a href="#" class="a-four">
-                <div class="phone"></div>
-              </a>
-              <div class="card-foot">
-                <div class="right-f"></div>
-                <div class="left-f"></div>
-              </div>
-            </li>
-          </div>
+        <div id="carousel" class="wrapper-inner">
+          <li class="li li-one">
+            <a href="#" class="a-one">
+              <div class="phone"></div>
+            </a>
+            <div class="card-foot">
+              <div class="right-f"></div>
+              <div class="left-f"></div>
+            </div>
+          </li>
+          <li class="li li-two">
+            <a href="#" class="a-two">
+              <div class="phone"></div>
+            </a>
+            <div class="card-foot">
+              <div class="right-f"></div>
+              <div class="left-f"></div>
+            </div>
+          </li>
+          <li class="li li-three">
+            <a href="#" class="a-three">
+              <div class="phone"></div>
+            </a>
+            <div class="card-foot">
+              <div class="right-f"></div>
+              <div class="left-f"></div>
+            </div>
+          </li>
+          <li class="li li-four">
+            <a href="#" class="a-four">
+              <div class="phone"></div>
+            </a>
+            <div class="card-foot">
+              <div class="right-f"></div>
+              <div class="left-f"></div>
+            </div>
+          </li>
         </div>
         <span class="highlight">Alerte</span>
       </section>
@@ -301,8 +303,14 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-
+    <!-- <script src="jquery.visible.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+    <script src="./Js/horizontalScroll.js"></script>
     <script src="./Js/main.js"></script>
     <script src="/Js/loader.js"></script>
+    <script src="/Js/scroll.js"></script>
+    <script src="withinviewport.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery.withinviewport.js"></script>
   </body>
 </html>

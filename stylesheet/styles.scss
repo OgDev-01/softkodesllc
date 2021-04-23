@@ -36,6 +36,7 @@
   body {
     height: 100vh;
     cursor: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -51,7 +52,7 @@
   border: 1px solid rgba(0, 0, 0, 0.781);
   // background-color: rgba(0, 0, 0, 0.877);
   border-radius: 50%;
-  z-index: 2;
+  z-index: 99;
   transition-duration: 150ms;
   transition-timing-function: ease-out;
   transition: transform 0.2s ease-in-out;
@@ -105,7 +106,7 @@
   padding-left: 25px;
 
   @media screen and (min-width: 44em) {
-    padding: 50px 10px 100px 250px;
+    padding: 50px 10px 100px 300px;
   }
 }
 
