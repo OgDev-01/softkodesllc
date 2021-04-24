@@ -48,13 +48,14 @@ h1 {
     height: 55vh;
     list-style: none;
     scroll-snap-align: center;
-    margin-right: 300px;
+    margin-right: 50px;
     //   background-color: gray;
     // border: 1px solid #000;
 
     @media screen and (min-width: 44em) {
       width: 45vw;
       height: 100vh;
+      margin-right: 300px;
     }
     .a-one {
       background-color: #d1bea8;

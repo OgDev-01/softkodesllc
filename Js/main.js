@@ -4,10 +4,10 @@ $(document).ready(function () {
   // let iconTwo = document.getElementById("icon-2");
   let iconThree = document.getElementById("icon-3");
   const listItems = document.getElementById("list-items");
-  const burger = document.getElementById("burger");
+  // const burger = document.getElementById("burger");
   const body = document.querySelector("body");
 
-  burger.addEventListener("click", () => {
+  $("#burger").on("click", () => {
     if (!menuClicked) {
       listItems.classList.add("open");
       $(".nav-item").addClass("li-visible");

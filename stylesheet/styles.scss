@@ -36,26 +36,28 @@
   body {
     height: 100vh;
     cursor: auto;
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
 }
 
 // Custom cursor style
 .cursor-custom {
-  width: 20px;
-  height: 20px;
-  position: fixed;
-  pointer-events: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid rgba(0, 0, 0, 0.781);
-  // background-color: rgba(0, 0, 0, 0.877);
-  border-radius: 50%;
-  z-index: 99;
-  transition-duration: 150ms;
-  transition-timing-function: ease-out;
-  transition: transform 0.2s ease-in-out;
+  @media screen and (min-width: 44em) {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.781);
+    // background-color: rgba(0, 0, 0, 0.877);
+    border-radius: 50%;
+    z-index: 99;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+    transition: transform 0.2s ease-in-out;
+  }
 }
 .hovered {
   transform: scale(5);

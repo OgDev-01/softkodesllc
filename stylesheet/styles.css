@@ -69,10 +69,16 @@
   position: absolute;
   max-width: 100%;
   height: 100vh;
-  z-index: 99;
+  max-height: 100vh;
+  z-index: 100;
   background: #f8fdff;
   overflow: hidden;
-  display: none;
+}
+
+.finished {
+  max-height: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .wait {
@@ -307,7 +313,7 @@
   background-position: center;
   width: 50px;
   height: 40px;
-  z-index: 99;
+  z-index: 100;
   position: relative;
   top: 5px;
 }
@@ -403,6 +409,7 @@
   top: 0;
   left: 0;
   z-index: 9;
+  overflow: hidden;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -415,15 +422,20 @@
     display: -ms-flexbox;
     display: flex;
     height: auto;
-    width: 28%;
+    width: 30%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     max-height: 50px;
     opacity: 1;
+    position: relative;
   }
 }
 
@@ -440,7 +452,9 @@
 
 @media screen and (min-width: 44em) {
   .header .nav-list li {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -601,6 +615,7 @@ blockquote {
       -ms-flex-pack: left;
           justify-content: left;
   overflow: hidden;
+  padding: 15px;
 }
 
 @media screen and (min-width: 44em) {
@@ -690,9 +705,20 @@ blockquote h3 {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 40px;
+  line-height: 53px;
   color: #000000;
+}
+
+@media screen and (min-width: 44em) {
+  blockquote h3 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 80px;
+    color: #000000;
+  }
 }
 
 blockquote .leaders {
@@ -743,7 +769,7 @@ blockquote .text-wrap .text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (min-width: 44em) {
@@ -851,13 +877,14 @@ h1 {
   height: 55vh;
   list-style: none;
   scroll-snap-align: center;
-  margin-right: 300px;
+  margin-right: 50px;
 }
 
 @media screen and (min-width: 44em) {
   .wrapper-inner li {
     width: 45vw;
     height: 100vh;
+    margin-right: 300px;
   }
 }
 
@@ -2318,7 +2345,7 @@ figure {
 .what-we-do .deeds .text-deed-wrap .words {
   width: 100%;
   height: 80%;
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 @media screen and (min-width: 44em) {
@@ -2334,11 +2361,10 @@ figure {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 159.2%;
+  line-height: 109.2%;
   /* identical to box height, or 32px */
   letter-spacing: -0.01em;
   color: #000000;
-  opacity: 0.8;
 }
 
 .what-we-do .deeds .text-deed-wrap .words p {
@@ -2348,7 +2374,7 @@ figure {
   font-size: 20px;
   line-height: 159.2%;
   /* or 32px */
-  margin-top: 50px;
+  margin-top: 25px;
   letter-spacing: -0.01em;
   color: #000000;
   opacity: 0.8;
@@ -2357,6 +2383,7 @@ figure {
 @media screen and (min-width: 44em) {
   .what-we-do .deeds .text-deed-wrap .words p {
     padding-right: 80px;
+    margin-top: 50px;
   }
 }
 
@@ -2372,15 +2399,17 @@ figure {
   }
 }
 
-.what-we-do .deed-two .img-deed-wrap {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+@media screen and (min-width: 44em) {
+  .what-we-do .deed-two .img-deed-wrap {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .what-we-do .deed-two {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 @media screen and (min-width: 44em) {
@@ -2618,29 +2647,30 @@ h1:after {
 * body {
   height: 100vh;
   cursor: auto;
-  overflow-x: hidden;
 }
 
-.cursor-custom {
-  width: 20px;
-  height: 20px;
-  position: fixed;
-  pointer-events: none;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 1px solid rgba(0, 0, 0, 0.781);
-  border-radius: 50%;
-  z-index: 99;
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+@media screen and (min-width: 44em) {
+  .cursor-custom {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.781);
+    border-radius: 50%;
+    z-index: 99;
+    -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
 }
 
 .hovered {

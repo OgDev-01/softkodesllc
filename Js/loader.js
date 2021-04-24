@@ -1,5 +1,4 @@
 $(function () {
-  
   function progress() {
     // $(window).css("scroll-behaviour", "none");
     var percent = document.querySelector(".percent");
@@ -19,9 +18,7 @@ $(function () {
       if (count == 100 && per == 100) {
         percent.classList.add("text-blink");
         text.style.display = "block";
-        $(".loading").addClass(
-          "animate__animated animate__delay-1s animate__zoomOutUp"
-        );
+        $(".loading").addClass("finished");
         clearInterval(loading);
       } else {
         // $(window).style.touchbehaviour = "none";
@@ -33,7 +30,6 @@ $(function () {
     }
     // $(window).css("scroll-behaviour", "auto");
   }
-  
+
   progress();
-  
 });

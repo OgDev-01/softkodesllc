@@ -40,7 +40,7 @@
       background-position: center;
       width: 50px;
       height: 40px;
-      z-index: 99;
+      z-index: 100;
       position: relative;
       top: 5px;
     }
@@ -116,7 +116,7 @@
     // position: relative;
     z-index: 9;
     // max-height: 0;
-    // overflow: hidden;
+    overflow: hidden;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     z-index: 10;
@@ -125,11 +125,13 @@
       display: flex;
       height: auto;
       // background-color: green;
-      width: 28%;
+      width: 30%;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
       max-height: 50px;
       opacity: 1;
+      position: relative;
     }
 
     li {
@@ -140,7 +142,8 @@
       // margin: 200px auto;
       // background-color: gray;
       @media screen and (min-width: 44em) {
-        width: calc(100% / 3);
+        width: calc(100% / 4);
+        transform: none;
       }
       // &:hover ~ .cursor-custom {
       //   transform: scale(6);

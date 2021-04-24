@@ -82,6 +82,7 @@ blockquote {
   justify-content: left;
   // background: red;
   overflow: hidden;
+  padding: 15px;
 
   @media screen and (min-width: 44em) {
     width: 80%;
@@ -126,10 +127,20 @@ blockquote {
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 40px;
+    line-height: 53px;
 
     color: #000000;
+
+    @media screen and(min-width: 44em) {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 80px;
+
+      color: #000000;
+    }
   }
 
   .leaders {
@@ -168,7 +179,7 @@ blockquote {
     }
     .text {
       flex: 1;
-      text-align: center;
+      text-align: left;
       //   background: red;
       //   border-right: 1px solid black;
       @media screen and (min-width: 44em) {
