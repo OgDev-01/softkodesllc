@@ -2728,6 +2728,7 @@ h1:after {
 @media screen and (min-width: 44em) {
   .section-three {
     padding: 50px 10px 100px 300px;
+    margin-bottom: 300px;
   }
 }
 
