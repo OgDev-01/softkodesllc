@@ -14,7 +14,7 @@ $(document).ready(function () {
       iconOne.classList.add("rotate-1");
       // iconTwo.classList.add("second");
       iconThree.classList.add("rotate-2");
-      $("body").css("touch-action", "none");
+      $("body").css("overflow", "hidden");
       menuClicked = true;
     } else {
       listItems.classList.remove("open");
@@ -22,7 +22,7 @@ $(document).ready(function () {
       iconOne.classList.remove("rotate-1");
       // iconTwo.classList.remove("second");
       iconThree.classList.remove("rotate-2");
-      $("body").css("touch-action", "auto");
+      $("body").css("overflow", "auto");
       menuClicked = false;
     }
   });
