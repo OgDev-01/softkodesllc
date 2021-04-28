@@ -436,6 +436,7 @@
     max-height: 50px;
     opacity: 1;
     position: relative;
+    background-color: transparent;
   }
 }
 
@@ -475,6 +476,12 @@
   opacity: 0.1;
 }
 
+@media screen and (min-width: 44em) {
+  .header .nav-list li:after {
+    opacity: 0;
+  }
+}
+
 .header .nav-list li:nth-child(1)::before {
   content: "";
   display: block;
@@ -483,6 +490,12 @@
   margin-left: auto;
   margin-right: auto;
   opacity: 0.1;
+}
+
+@media screen and (min-width: 44em) {
+  .header .nav-list li:nth-child(1)::before {
+    opacity: 0;
+  }
 }
 
 .header .nav-list .li-visible {
@@ -622,19 +635,6 @@ blockquote {
   blockquote {
     width: 80%;
     margin-left: auto;
-  }
-}
-
-@media screen and (max-width: 44em) {
-  blockquote .serve {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 80px;
-    /* identical to box height */
-    text-align: left;
-    color: #000000;
     padding: 0;
   }
 }
@@ -698,6 +698,20 @@ blockquote h1:after {
 @media screen and (min-width: 44em) {
   blockquote h1:after {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 44em) {
+  blockquote .serve {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 80px;
+    /* identical to box height */
+    background-color: red;
+    text-align: left;
+    color: #000000;
   }
 }
 
@@ -859,16 +873,32 @@ h1 {
   }
 }
 
+.outer-wrap {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.outer-wrap::-webkit-scrollbar {
+  display: none;
+}
+
 .wrapper-inner {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 400vw;
   margin-top: 150px;
-  -ms-scroll-snap-type: x proximity;
-      scroll-snap-type: x proximity;
 }
 
 @media screen and (min-width: 44em) {
   .wrapper-inner {
-    width: 100%;
+    width: 250vw;
   }
 }
 
@@ -876,7 +906,6 @@ h1 {
   width: 90vw;
   height: 55vh;
   list-style: none;
-  scroll-snap-align: center;
   margin-right: 50px;
 }
 
@@ -1084,6 +1113,8 @@ figure {
 @media screen and (min-width: 44em) {
   figure {
     text-align: left;
+    font-size: 40px;
+    letter-spacing: 0em;
   }
 }
 
@@ -1110,9 +1141,9 @@ figure {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1210,6 +1241,10 @@ figure {
   }
 }
 
+.abt-arrow {
+  top: 80%;
+}
+
 .arrow-down-wrap {
   position: absolute;
   top: 120%;
@@ -1217,7 +1252,6 @@ figure {
   height: 10px;
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
-  background-color: red;
   width: 0px;
 }
 
@@ -1248,6 +1282,10 @@ figure {
   position: relative;
   top: 30px;
   left: 43px;
+}
+
+.abt-arrow {
+  top: 105%;
 }
 
 .social-wrap {
@@ -2449,7 +2487,7 @@ h1:after {
 
 .brand-img {
   width: 70vw;
-  height: 80vh;
+  height: 40vh;
   background: url(/images/brand-mobile.png) no-repeat;
   background-size: 100% 100%;
   margin-left: auto;
@@ -2461,6 +2499,8 @@ h1:after {
   .brand-img {
     background: url(/images/brand.png) no-repeat;
     background-size: 100% 100%;
+    width: 70vw;
+    height: 80vh;
   }
 }
 
@@ -2491,8 +2531,8 @@ h1:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media screen and (min-width: 44em) {
@@ -2514,18 +2554,22 @@ h1:after {
 
 .img-card-wrap .card-wrap .card {
   width: 100%;
-  height: 390px;
+  height: 450px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 44em) {
   .img-card-wrap .card-wrap .card {
     width: 28%;
     height: 390px;
+    margin-top: 0;
   }
 }
 
-.img-card-wrap .card-wrap .card:nth-child(2) {
-  margin-top: 55px;
+@media screen and (min-width: 44em) {
+  .img-card-wrap .card-wrap .card:nth-child(2) {
+    margin-top: 55px;
+  }
 }
 
 .img-card-wrap .card-wrap .card .card-head-one {
@@ -2781,7 +2825,7 @@ h1:after {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 80px;
   text-align: center;
   width: 100%;
@@ -2809,7 +2853,7 @@ h1:after {
 
 .abt-section .img-wrap {
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   margin-top: 100px;
   background: url(/images/about-img.png);
   background-size: 100% 100%;

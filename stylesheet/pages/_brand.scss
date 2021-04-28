@@ -27,7 +27,7 @@ h1 {
 }
 .brand-img {
   width: 70vw;
-  height: 80vh;
+  height: 40vh;
   background: url(/images/brand-mobile.png) no-repeat;
   background-size: 100% 100%;
   margin: {
@@ -40,5 +40,7 @@ h1 {
     // background: url(/images/brand-mobile.png);
     background: url(/images/brand.png) no-repeat;
     background-size: 100% 100%;
+    width: 70vw;
+    height: 80vh;
   }
 }

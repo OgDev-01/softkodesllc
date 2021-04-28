@@ -26,14 +26,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- AOS animation linking -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="cursor-custom"></div>
@@ -66,7 +59,7 @@
             </div>
           </div>
           <ul class="nav-list" id="list-items">
-            <li class="nav-item"><a href="#">Work</a></li>
+            <li class="nav-item active"><a href="./home.html">Work</a></li>
             <li class="nav-item"><a href="./services.html">Services</a></li>
             <li class="nav-item"><a href="./about.html">About</a></li>
           </ul>
@@ -114,16 +107,33 @@
       <!-- second page -->
       <section class="second-section">
         <blockquote>
-          <h1 class="serve">Our Services</h1>
+          <h1
+            class="serve"
+            data-aos="fade"
+            data-aos-delay="400"
+            data-aos-duration="1500"
+          >
+            Our Services
+          </h1>
           <!-- <hr /> -->
-          <p class="leaders">
+          <p
+            class="leaders"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1500"
+          >
             Leading digital agency with solid design and development expertise.
             We build readymade websites, mobile applications, and elaborate
             online business services.
           </p>
 
           <div class="text-wrap">
-            <div class="text-1 text">
+            <div
+              class="text-1 text"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-duration="1500"
+            >
               <h5>Design</h5>
               <li>Copywriting</li>
               <li>Animation</li>
@@ -133,7 +143,12 @@
               <li>Backend/API integration</li>
               <li>WordPress</li>
             </div>
-            <div class="text-2 text">
+            <div
+              class="text-2 text"
+              data-aos="fade"
+              data-aos-delay="400"
+              data-aos-duration="1500"
+            >
               <h5>Development</h5>
               <li>Copywriting</li>
               <li>Animation</li>
@@ -143,7 +158,12 @@
               <li>Backend/API integration</li>
               <li>WordPress</li>
             </div>
-            <div class="text-3 text">
+            <div
+              class="text-3 text"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-duration="1500"
+            >
               <h5>Training</h5>
               <li>Web Design</li>
               <li>iOS design</li>
@@ -154,7 +174,12 @@
             </div>
           </div>
         </blockquote>
-        <article class="see-all">
+        <article
+          class="see-all"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+        >
           <!-- <span class="num-count num-2">2</span> -->
           <a href="#" class="see-btn">See all</a>
         </article>
@@ -163,43 +188,45 @@
       <!-- Image slider section -->
       <section class="section-three">
         <h1 class="works">Works</h1>
-        <div id="carousel" class="wrapper-inner">
-          <li class="li li-one">
-            <a href="#" class="a-one">
-              <div class="phone"></div>
-            </a>
-            <div class="card-foot">
-              <div class="right-f"></div>
-              <div class="left-f"></div>
-            </div>
-          </li>
-          <li class="li li-two">
-            <a href="#" class="a-two">
-              <div class="phone"></div>
-            </a>
-            <div class="card-foot">
-              <div class="right-f"></div>
-              <div class="left-f"></div>
-            </div>
-          </li>
-          <li class="li li-three">
-            <a href="#" class="a-three">
-              <div class="phone"></div>
-            </a>
-            <div class="card-foot">
-              <div class="right-f"></div>
-              <div class="left-f"></div>
-            </div>
-          </li>
-          <li class="li li-four">
-            <a href="#" class="a-four">
-              <div class="phone"></div>
-            </a>
-            <div class="card-foot">
-              <div class="right-f"></div>
-              <div class="left-f"></div>
-            </div>
-          </li>
+        <div class="outer-wrap">
+          <div id="carousel" class="wrapper-inner">
+            <li class="li li-one">
+              <a href="#" class="a-one">
+                <div class="phone"></div>
+              </a>
+              <div class="card-foot">
+                <div class="right-f"></div>
+                <div class="left-f"></div>
+              </div>
+            </li>
+            <li class="li li-two">
+              <a href="#" class="a-two">
+                <div class="phone"></div>
+              </a>
+              <div class="card-foot">
+                <div class="right-f"></div>
+                <div class="left-f"></div>
+              </div>
+            </li>
+            <li class="li li-three">
+              <a href="#" class="a-three">
+                <div class="phone"></div>
+              </a>
+              <div class="card-foot">
+                <div class="right-f"></div>
+                <div class="left-f"></div>
+              </div>
+            </li>
+            <li class="li li-four">
+              <a href="#" class="a-four">
+                <div class="phone"></div>
+              </a>
+              <div class="card-foot">
+                <div class="right-f"></div>
+                <div class="left-f"></div>
+              </div>
+            </li>
+          </div>
         </div>
         <span class="highlight">Alerte</span>
       </section>
@@ -284,33 +311,46 @@
           </div>
 
           <div class="footer">
-            <span>copyright by soft-kodes.com</span>
+            <span>copyright @ soft-kodes.com</span>
           </div>
         </div>
       </section>
     </div>
 
+    <!-- Jquery script linking -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Jquery mousewheel plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+    <!-- <script src="./Js/horizontalScroll.js"></script> -->
+    <!-- <script src="./Js/jquery.easeScroll.js"></script> -->
+    <script src="./Js/main.js"></script>
+    <script src="/Js/loader.js"></script>
+    <script src="/Js/scroll.js"></script>
+    <!-- <script>
+      // $("html").easeScroll();
+
+      $("html").easeScroll({
+        frameRate: 60,
+        animationTime: 4000,
+        stepSize: 100,
+        pulseAlgorithm: 1,
+        pulseScale: 8,
+        pulseNormalize: 1,
+        accelerationDelta: 20,
+        accelerationMax: 1,
+        keyboardSupport: true,
+        arrowScroll: 50,
+        touchpadSupport: true,
+        fixedBackground: true,
+      });
+    </script> -->
     <!-- AOS init script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- Jquery script linking -->
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="jquery.visible.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
-    <script src="./Js/horizontalScroll.js"></script>
-    <script src="./Js/main.js"></script>
-    <script src="/Js/loader.js"></script>
-    <script src="/Js/scroll.js"></script>
-    <!-- <script src="withinviewport.js"></script> -->
-    <!-- <script src="jquery.js"></script> -->
-    <!-- <script src="jquery.withinviewport.js"></script> -->
   </body>
 </html>

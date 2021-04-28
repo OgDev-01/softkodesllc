@@ -5,7 +5,7 @@ $(document).ready(function () {
   let iconThree = document.getElementById("icon-3");
   const listItems = document.getElementById("list-items");
   // const burger = document.getElementById("burger");
-  const body = document.querySelector("body");
+  // const body = document.querySelector("body");
 
   $("#burger").on("click", () => {
     if (!menuClicked) {
@@ -14,7 +14,7 @@ $(document).ready(function () {
       iconOne.classList.add("rotate-1");
       // iconTwo.classList.add("second");
       iconThree.classList.add("rotate-2");
-      body.style.touchAction = "none";
+      $("body").css("touch-action", "none");
       menuClicked = true;
     } else {
       listItems.classList.remove("open");
@@ -22,7 +22,7 @@ $(document).ready(function () {
       iconOne.classList.remove("rotate-1");
       // iconTwo.classList.remove("second");
       iconThree.classList.remove("rotate-2");
-      body.style.touchAction = "auto";
+      $("body").css("touch-action", "auto");
       menuClicked = false;
     }
   });

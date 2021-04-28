@@ -18,17 +18,19 @@ $(function () {
       if (count == 100 && per == 100) {
         percent.classList.add("text-blink");
         text.style.display = "block";
-        $(".loading").addClass("finished");
+        setInterval(() => {
+          $(".loading").addClass("finished");
+          $("body").css("overflow", "auto");
+        }, 1000);
         clearInterval(loading);
       } else {
-        // $(window).style.touchbehaviour = "none";
         per = per + 1;
         count = count + 1;
         progress.style.width = per + "%";
         percent.textContent = count + "%";
+        $("body").css("overflow", "hidden");
       }
     }
-    // $(window).css("scroll-behaviour", "auto");
   }
 
   progress();

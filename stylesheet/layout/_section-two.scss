@@ -87,22 +87,9 @@ blockquote {
   @media screen and (min-width: 44em) {
     width: 80%;
     margin-left: auto;
+    padding: 0;
   }
-  .serve {
-    @media screen and (max-width: 44em) {
-      font-family: "Playfair Display";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 50px;
-      line-height: 80px;
-      /* identical to box height */
-      // background-color: red;
-      text-align: left;
 
-      color: #000000;
-      padding: 0;
-    }
-  }
   h1 {
     @include subhead;
     width: 100%;
@@ -123,6 +110,21 @@ blockquote {
       }
     }
   }
+  .serve {
+    @media screen and (max-width: 44em) {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 80px;
+      /* identical to box height */
+      background-color: red;
+      text-align: left;
+
+      color: #000000;
+    }
+  }
+
   h3 {
     font-family: "Playfair Display";
     font-style: normal;

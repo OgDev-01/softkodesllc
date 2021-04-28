@@ -24,22 +24,32 @@ h1 {
     line-height: 140px !important;
   }
 }
+.outer-wrap {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 .wrapper-inner {
-  // display: flex;
-  // flex-direction: row;
+  display: flex;
+  flex-direction: row;
   // justify-content: space-between;
-  width: 100%;
+  width: 400vw;
+  // height: 100vh;
   margin-top: 150px;
   // position: fixed;
   // transform: rotate(90deg) translateY(-80vh);
   // transform-origin: top left;
-  scroll-snap-type: x proximity;
-
-  // scroll-behavior: smooth;
+  // scroll-snap-type: mandatory;
+  // overflow-y: scroll;
+  // background-color: red;
 
   @media screen and (min-width: 44em) {
-    width: 100%;
+    width: 250vw;
     // transform: rotate(90deg) translateY(-100vh);
   }
 
@@ -47,7 +57,7 @@ h1 {
     width: 90vw;
     height: 55vh;
     list-style: none;
-    scroll-snap-align: center;
+    // scroll-snap-align: center;
     margin-right: 50px;
     //   background-color: gray;
     // border: 1px solid #000;

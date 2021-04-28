@@ -84,6 +84,8 @@ figure {
 
   @media screen and (min-width: 44em) {
     text-align: left;
+    font-size: 40px;
+    letter-spacing: 0em;
   }
 }
 .product-contain {
@@ -97,7 +99,7 @@ figure {
 
   @media screen and (min-width: 44em) {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -180,13 +182,16 @@ figure {
     }
   }
 }
+.abt-arrow {
+  top: 80%;
+}
 .arrow-down-wrap {
   position: absolute;
   top: 120%;
   left: 34%;
   height: 10px;
   animation: bounce 2s infinite;
-  background-color: red;
+  // background-color: red;
   width: 0px;
   @media screen and (min-width: 44em) {
     top: 70%;
@@ -212,6 +217,9 @@ figure {
     top: 30px;
     left: 43px;
   }
+}
+.abt-arrow {
+  top: 105%;
 }
 
 // .works-btn {

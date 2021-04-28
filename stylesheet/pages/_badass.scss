@@ -17,8 +17,8 @@
     justify-content: space-between;
     flex-direction: column;
     padding: {
-      left: 20px;
-      right: 20px;
+      left: 25px;
+      right: 25px;
     }
 
     @media screen and (min-width: 44em) {
@@ -31,16 +31,20 @@
 
     .card {
       width: 100%;
-      height: 390px;
+      height: 450px;
+      margin-top: 40px;
       //   background: red;
 
       @media screen and (min-width: 44em) {
         width: 28%;
         height: 390px;
+        margin-top: 0;
       }
 
       &:nth-child(2) {
-        margin-top: 55px;
+        @media screen and(min-width: 44em) {
+          margin-top: 55px;
+        }
       }
       .card-head-one {
         background: url(/images/badass-1.png);
