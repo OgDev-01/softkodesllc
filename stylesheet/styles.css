@@ -701,19 +701,6 @@ blockquote h1:after {
   }
 }
 
-@media screen and (max-width: 44em) {
-  blockquote .serve {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 80px;
-    /* identical to box height */
-    text-align: left;
-    color: #000000;
-  }
-}
-
 blockquote h3 {
   font-family: "Playfair Display";
   font-style: normal;
