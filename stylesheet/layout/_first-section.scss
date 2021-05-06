@@ -114,6 +114,7 @@ figure {
   // padding: 0px 60px 0 0;
   // background: red;
   // flex: 1;
+  // display: none;
 
   @media screen and (min-width: 44em) {
     font-family: "Playfair Display", sans-serif;
@@ -129,6 +130,9 @@ figure {
     display: inline-block;
   }
 }
+#skills {
+  width: 70%;
+}
 .lorem {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -136,7 +140,7 @@ figure {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  color: #ff8d3a;
+  color: #2d6281;
   display: inline-block;
   width: 100%;
   text-align: left;
@@ -182,9 +186,7 @@ figure {
     }
   }
 }
-.abt-arrow {
-  top: 80%;
-}
+
 .arrow-down-wrap {
   position: absolute;
   top: 120%;
@@ -219,7 +221,11 @@ figure {
   }
 }
 .abt-arrow {
-  top: 105%;
+  top: 110%;
+
+  @media screen and(min-width: 44em) {
+    top: 60%;
+  }
 }
 
 // .works-btn {
@@ -364,4 +370,11 @@ figure {
       transform: translateY(-15px);
     }
   }
+}
+
+#backbone {
+  margin-top: 40px;
+}
+#scrolls {
+  margin-top: 90px;
 }

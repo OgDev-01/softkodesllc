@@ -125,7 +125,7 @@
       display: flex;
       height: auto;
       // background-color: green;
-      width: 30%;
+      width: 40%;
       justify-content: space-between;
       align-items: center;
       flex-direction: row;
@@ -143,12 +143,13 @@
       // margin: 200px auto;
       // background-color: gray;
       @media screen and (min-width: 44em) {
-        width: calc(100% / 4);
+        width: calc(100% / 5);
         transform: none;
       }
       // &:hover ~ .cursor-custom {
       //   transform: scale(6);
       // }
+
       a {
         padding: 10px 0;
         display: block;
@@ -156,7 +157,16 @@
         width: 100%;
         // background-color: wheat;
         // border-right: 1px solid black;
+
+        &:hover {
+          color: #c18e0b;
+          transition: all 0.5s ease-in;
+        }
       }
+      .active {
+        color: #c18e0b;
+      }
+
       &:after {
         content: "";
         display: block;

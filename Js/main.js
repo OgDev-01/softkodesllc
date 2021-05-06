@@ -44,3 +44,13 @@ $(document).ready(function () {
 
   // var loaded = false;
 });
+
+// Active class handler
+let path = window.location.href;
+$(".refresh").each(function () {
+  if (this.href === path) {
+    $(this).addClass("active");
+  } else {
+    $(this).removeClass("active");
+  }
+});

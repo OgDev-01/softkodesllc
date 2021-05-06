@@ -59,32 +59,39 @@
             </div>
           </div>
           <ul class="nav-list" id="list-items">
-            <li class="nav-item active"><a href="./home.html">Work</a></li>
-            <li class="nav-item"><a href="./services.html">Services</a></li>
-            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item">
+              <a href="./home.html" class="refresh active">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="refresh">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./services.html" class="refresh">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="./training.html" class="refresh">Training</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="refresh">Contact</a>
+            </li>
           </ul>
         </nav>
 
-        <div class="landing">
+        <div class="landing" id="landed">
           <!-- <span class="num-count num-1">1</span> -->
           <figure class="animate__animated soft">Softkodes</figure>
           <div class="product-contain">
-            <h3
-              class="products animate__animated"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-            >
-              We make Products that works
+            <h3 class="products animate__animated">
+              We make Products that work
             </h3>
 
-            <h6 class="lorem">
+            <h6 class="lorem animate__animated" id="lorems">
               We’re based in Nigeria but <br />
               working worldwide, Partnering with local and international clients
               that value design just as much as we do
             </h6>
           </div>
-          <div class="adds-service">
+          <div class="adds-service" id="adds">
             <a href="#">Training</a>
             <a href="#">Design</a>
             <a href="#">Development</a>
@@ -95,7 +102,7 @@
           </div>
         </div>
 
-        <div class="social-wrap">
+        <div class="social-wrap socks animate__animated" id="scrolls">
           <div class="scroll-sign">scroll</div>
           <div class="social">
             <a href="#">Instagram</a>
@@ -110,8 +117,8 @@
           <h1
             class="serve"
             data-aos="fade"
-            data-aos-delay="400"
-            data-aos-duration="1500"
+            data-aos-delay="800"
+            data-aos-duration="2000"
           >
             Our Services
           </h1>
@@ -119,8 +126,8 @@
           <p
             class="leaders"
             data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1500"
+            data-aos-delay="800"
+            data-aos-duration="2000"
           >
             Leading digital agency with solid design and development expertise.
             We build readymade websites, mobile applications, and elaborate
@@ -130,8 +137,8 @@
           <div class="text-wrap">
             <div
               class="text-1 text"
-              data-aos="fade-right"
-              data-aos-delay="400"
+              data-aos="fade"
+              data-aos-delay="800"
               data-aos-duration="1500"
             >
               <h5>Design</h5>
@@ -146,7 +153,7 @@
             <div
               class="text-2 text"
               data-aos="fade"
-              data-aos-delay="400"
+              data-aos-delay="800"
               data-aos-duration="1500"
             >
               <h5>Development</h5>
@@ -160,9 +167,9 @@
             </div>
             <div
               class="text-3 text"
-              data-aos="fade-left"
-              data-aos-delay="400"
-              data-aos-duration="1500"
+              data-aos="fade"
+              data-aos-delay="800"
+              data-aos-duration="2000"
             >
               <h5>Training</h5>
               <li>Web Design</li>
@@ -177,8 +184,8 @@
         <article
           class="see-all"
           data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1500"
+          data-aos-delay="500"
+          data-aos-duration="2000"
         >
           <!-- <span class="num-count num-2">2</span> -->
           <a href="#" class="see-btn">See all</a>
@@ -186,7 +193,12 @@
       </section>
 
       <!-- Image slider section -->
-      <section class="section-three">
+      <section
+        class="section-three"
+        data-aos="fade"
+        data-aos-delay="800"
+        data-aos-duration="1500"
+      >
         <h1 class="works">Works</h1>
         <div class="outer-wrap">
           <div id="carousel" class="wrapper-inner">
@@ -232,23 +244,55 @@
       </section>
       <section class="section-four">
         <div class="about-us">
-          <h1>About Us</h1>
-          <p>
+          <h1
+            data-aos="fade"
+            data-aos-delay="400"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+          >
+            About Us
+          </h1>
+          <p
+            data-aos="fade"
+            data-aos-delay="400"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+          >
             Leading digital agency with solid design and development expertise.
             We build readymade websites, mobile applications, and elaborate
             online business services.
           </p>
 
-          <div class="team-img-wrap"></div>
+          <div
+            class="team-img-wrap"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="1500"
+          ></div>
           <div class="team-img-wrap-second">
-            <div class="img-card-1">
+            <div
+              class="img-card-1"
+              data-aos="fade-right"
+              data-aos-delay="1000"
+              data-aos-duration=1500"
+            >
               <img src="/images/about-2.jpg" alt="" />
             </div>
-            <div class="img-card-2">
+            <div
+              class="img-card-2"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1500"
+            >
               <img src="/images/about-3.jpg" alt="" />
             </div>
           </div>
-          <article class="see-all">
+          <article
+            class="see-all"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="1500"
+          >
             <a href="#" class="see-btn meet-btn">Meet the Team</a>
           </article>
         </div>
@@ -256,31 +300,48 @@
 
       <section class="sectiion-five">
         <div class="training">
-          <h1 id="head">We <span class="also">also</span> Train People on</h1>
+          <h1
+            id="head"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="2000"
+          >
+            We <span class="also">also</span> Train People on
+          </h1>
 
           <div class="skill-wrap s-one">
-            <li><a href="">Ux design</a></li>
-            <li><a href="">web design</a></li>
-            <li><a href="">mobile app development</a></li>
+            <li><a href="#" class="sk">Ux design</a></li>
+            <li><a href="#" class="sk">web design</a></li>
+            <li><a href="#" class="sk">mobile app development</a></li>
           </div>
           <div class="skill-wrap s-two">
-            <li><a href="">Graphic design</a></li>
-            <li><a href="">Digital marketing</a></li>
-            <li><a href="">Game development</a></li>
+            <li><a href="#" class="sk">Graphic design</a></li>
+            <li><a href="#" class="sk">Digital marketing</a></li>
+            <li><a href="#" class="sk">Game development</a></li>
           </div>
           <div class="skill-wrap s-three">
-            <li><a href="">Ux design</a></li>
-            <li><a href="">Content creation</a></li>
-            <li><a href="">Entrepreneurship</a></li>
+            <li><a href="#" class="sk">Ux design</a></li>
+            <li><a href="#" class="sk">Content creation</a></li>
+            <li><a href="#" class="sk">Entrepreneurship</a></li>
           </div>
 
-          <article class="see-all">
+          <article
+            class="see-all"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="2000"
+          >
             <a href="#" class="see-btn meet-btn">View our Scholarship</a>
           </article>
         </div>
       </section>
       <section class="subscribe">
-        <div class="news-letter">
+        <div
+          class="news-letter"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1500"
+        >
           <h1>Subscribe to our Newsletter</h1>
           <div class="input-wrap">
             <input
@@ -294,7 +355,12 @@
       </section>
 
       <section class="section-six">
-        <div class="contact-us">
+        <div
+          class="contact-us"
+          data-aos="fade"
+          data-aos-delay="1000"
+          data-aos-duration="2000"
+        >
           <h1>Drop a message</h1>
           <figure>
             Leading digital agency with solid design and development expertise.
@@ -329,28 +395,13 @@
     <script src="./Js/main.js"></script>
     <script src="/Js/loader.js"></script>
     <script src="/Js/scroll.js"></script>
-    <!-- <script>
-      // $("html").easeScroll();
 
-      $("html").easeScroll({
-        frameRate: 60,
-        animationTime: 4000,
-        stepSize: 100,
-        pulseAlgorithm: 1,
-        pulseScale: 8,
-        pulseNormalize: 1,
-        accelerationDelta: 20,
-        accelerationMax: 1,
-        keyboardSupport: true,
-        arrowScroll: 50,
-        touchpadSupport: true,
-        fixedBackground: true,
-      });
-    </script> -->
     <!-- AOS init script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
   </body>
 </html>

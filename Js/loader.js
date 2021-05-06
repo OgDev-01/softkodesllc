@@ -1,4 +1,5 @@
 $(function () {
+  $(this).scrollTop(0);
   function progress() {
     // $(window).css("scroll-behaviour", "none");
     var percent = document.querySelector(".percent");
@@ -22,6 +23,13 @@ $(function () {
           $(".loading").addClass("finished");
           $("body").css("overflow", "auto");
         }, 1000);
+        setInterval(() => {
+          $("#landed").css("opacity", "1");
+          $(".products").addClass("animate__fadeInUp");
+          $("#lorems").addClass("animate__fadeInUp");
+          $(".socks").addClass("animate__fadeIn");
+          $("#adds").addClass("animate__fadeInUp");
+        }, 2000);
         clearInterval(loading);
       } else {
         per = per + 1;

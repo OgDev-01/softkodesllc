@@ -5,41 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
-    <link rel="stylesheet" href="/stylesheet/styles.css">
-     <!-- Google fonts cdn linking -->
-     <link rel="preconnect" href="https://fonts.gstatic.com" />
-     <link
-       href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Rubik&family=Playfair+Display:ital@0;1&display=swap"
-       rel="stylesheet"
-     />
- 
-     <link
-       rel="stylesheet"
-       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-       crossorigin="anonymous"
-     />
- 
-     <link
-       rel="stylesheet"
-       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-     />
- 
-     <link
-       rel="stylesheet"
-       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-     />
+    <link rel="stylesheet" href="/stylesheet/styles.css" />
+    <!-- Google fonts cdn linking -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Rubik&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    /> -->
   </head>
   <body>
     <div class="cursor-custom"></div>
 
-       <div class="container">
+    <div class="container" data-scroll-container>
       <!-- First viewed page -->
       <div class="gradient-1"></div>
       <div class="gradient-2"></div>
       <div class="gradient-3"></div>
       <section class="first-section">
-        <nav class="header">
+        <nav class="header" data-scroll-section>
           <div class="logo-wrap">
             <a href="#" class="logo"></a>
 
@@ -50,26 +55,41 @@
             </div>
           </div>
           <ul class="nav-list" id="list-items">
-            <li class="nav-item"><a href="./home.html">Work</a></li>
-            <li class="nav-item"><a href="./services.html">Services</a></li>
-            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item">
+              <a href="./home.html" class="refresh">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="refresh">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./services.html" class="refresh">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="./training.html" class="refresh">Training</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="refresh">Contact</a>
+            </li>
           </ul>
         </nav>
 
-        <div class="landing">
+        <div class="landing" data-scroll-section>
           <!-- <span class="num-count num-1">1</span> -->
           <figure class="animate__animated soft">Softkodes</figure>
           <div class="product-contain p-a">
-            <h3 class="products animate__animated back"  data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"">
-             Our core strengths are in the Industry
+            <h3
+              class="products animate__animated animate__fadeInUp back"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              id="backbone"
+            >
+              Our core strengths are in the Industry
             </h3>
 
-            <h6 class="lorem abt">
-              We’re based in Nigeria but <br> working worldwide, Partnering with
-              local and international clients that value design just as much as
-              we do
+            <h6 class="lorem abt animate__animated animate__fadeInUp">
+              We’re based in Nigeria but <br />
+              working worldwide, Partnering with local and international clients
+              that value design just as much as we do
             </h6>
           </div>
           <div class="adds-service">
@@ -83,7 +103,7 @@
           </div>
         </div>
 
-        <div class="social-wrap">
+        <div class="social-wrap" id="scrolls">
           <div class="scroll-sign">scroll</div>
           <div class="social">
             <a href="#">Instagram</a>
@@ -91,12 +111,17 @@
           </div>
         </div>
       </section>
-      <section class="second-section">
+      <section class="second-section" data-scroll-section>
         <blockquote>
-          <h3>We are a company focusing on seamless communication and process transparency</h3>
+          <h3>
+            We are a company focusing on seamless communication and process
+            transparency
+          </h3>
           <!-- <hr /> -->
           <p class="leaders">
-            A strategic and tactical approach is essential for long-term goals, but what’s even more important is keeping deadlines and promises. Our work gets results and we never hide behind paperwork.
+            A strategic and tactical approach is essential for long-term goals,
+            but what’s even more important is keeping deadlines and promises.
+            Our work gets results and we never hide behind paperwork.
           </p>
 
           <div class="text-wrap">
@@ -130,11 +155,7 @@
               <li>Development</li>
             </div>
           </div>
-        <!-- </blockquote>
-        <article class="see-all">
-          <span class="num-count num-2">2</span>
-          <a href="#" class="see-btn">See all</a>
-        </article> -->
+        </blockquote>
       </section>
 
       <section class="what-we-do-wrap">
@@ -143,12 +164,16 @@
         <div class="what-we-do">
           <div class="deeds deed-one">
             <div class="img-deed-wrap">
-              <img src="/images/deeds-one.jpg" alt="first work">
+              <img src="/images/deeds-one.jpg" alt="first work" />
             </div>
             <div class="text-deed-wrap">
               <div class="words">
                 <h6>Websites, Web Applications</h6>
-                <p>In our team, developers work alongside designers. This is crucial in creating a fast and responsive website that would excite the audience.</p>
+                <p>
+                  In our team, developers work alongside designers. This is
+                  crucial in creating a fast and responsive website that would
+                  excite the audience.
+                </p>
                 <article class="see-all see-deeds">
                   <!-- <span class="num-count num-2">2</span> -->
                   <a href="#" class="see-btn">See all</a>
@@ -158,12 +183,16 @@
           </div>
           <div class="deeds deed-two">
             <div class="img-deed-wrap">
-              <img src="/images/deeds-two.jpg" alt="">
+              <img src="/images/deeds-two.jpg" alt="" />
             </div>
             <div class="text-deed-wrap">
               <div class="words">
                 <h6>Websites, Web Applications</h6>
-                <p>In our team, developers work alongside designers. This is crucial in creating a fast and responsive website that would excite the audience.</p>
+                <p>
+                  In our team, developers work alongside designers. This is
+                  crucial in creating a fast and responsive website that would
+                  excite the audience.
+                </p>
                 <article class="see-all see-deeds">
                   <!-- <span class="num-count num-2">2</span> -->
                   <a href="#" class="see-btn">See all</a>
@@ -173,12 +202,16 @@
           </div>
           <div class="deeds deed-three">
             <div class="img-deed-wrap">
-              <img src="/images/deeds-three.jpg" alt="">
+              <img src="/images/deeds-three.jpg" alt="" />
             </div>
             <div class="text-deed-wrap">
               <div class="words">
                 <h6>Websites, Web Applications</h6>
-                <p>In our team, developers work alongside designers. This is crucial in creating a fast and responsive website that would excite the audience.</p>
+                <p>
+                  In our team, developers work alongside designers. This is
+                  crucial in creating a fast and responsive website that would
+                  excite the audience.
+                </p>
                 <article class="see-all see-deeds">
                   <!-- <span class="num-count num-2">2</span> -->
                   <a href="#" class="see-btn">See all</a>
@@ -188,11 +221,11 @@
           </div>
         </div>
 
-        <h3>We are problem solvers, geeks but real people that make stuff happen and clients happy.</h3>
-
-
+        <h3>
+          We are problem solvers, geeks but real people that make stuff happen
+          and clients happy.
+        </h3>
       </section>
-
 
       <section class="subscribe">
         <div class="news-letter">
@@ -230,9 +263,7 @@
           </div>
         </div>
       </section>
-
-
-
+    </div>
 
     <!-- AOS init script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -248,6 +279,10 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- locomotive scroll linking -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+
+    <!-- <script src="/Js/locomotive.js"></script> -->
     <script src="./Js/main.js"></script>
   </body>
 </html>

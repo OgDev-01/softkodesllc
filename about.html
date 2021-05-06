@@ -24,6 +24,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    /> -->
   </head>
   <body>
     <div class="cursor-custom"></div>
@@ -43,26 +47,36 @@
             </div>
           </div>
           <ul class="nav-list" id="list-items">
-            <li class="nav-item"><a href="./home.html">Work</a></li>
-            <li class="nav-item"><a href="./services.html">Services</a></li>
-            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item">
+              <a href="./home.html" class="refresh">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="refresh">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./services.html" class="refresh">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="./training.html" class="refresh">Training</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="refresh">Contact</a>
+            </li>
           </ul>
         </nav>
 
-        <div class="landing">
+        <div class="landing" data-scroll-section="">
           <!-- <span class="num-count num-1">1</span> -->
           <figure class="animate__animated soft">Softkodes</figure>
           <div class="product-contain p-a">
             <h3
-              class="products animate__animated back"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
+              class="products animate__animated animate__fadeInUp back"
+              id="backbone"
             >
               The backbones of the company.
             </h3>
 
-            <h6 class="lorem abt">
+            <h6 class="lorem abt animate__animated animate__fadeInUp">
               We are a group of people that think digital and take daily showers
               of light on sunny Portugal. We started in Coimbra but we have
               clients all around the world.
@@ -79,7 +93,7 @@
           </div>
         </div>
 
-        <div class="social-wrap">
+        <div class="social-wrap" id="scrolls">
           <div class="scroll-sign">scroll</div>
           <div class="social">
             <a href="#">Instagram</a>
@@ -92,7 +106,7 @@
         <div class="img-wrap"></div>
       </div>
 
-      <div class="strategy-wrap">
+      <div class="strategy-wrap" data-scroll-section>
         <p>
           A strategic and tactical approach is essential for long-term goals,
           but what’s even more important is keeping deadlines and promises. Our
@@ -100,8 +114,8 @@
         </p>
       </div>
 
-      <section class="brand">
-        <h1>Top Brands we’ve worked with</h1>
+      <section class="brand" data-scroll-section>
+        <h1 data-scroll>Top Brands we’ve worked with</h1>
         <div class="brand-img"></div>
       </section>
 
@@ -224,6 +238,8 @@
       AOS.init();
     </script>
 
+    <!-- Locomotive scroll script -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
     <!-- Jquery script linking -->
 
     <script
@@ -233,5 +249,6 @@
     ></script>
 
     <script src="./Js/main.js"></script>
+    <!-- <script src="/Js/locomotive.js"></script> -->
   </body>
 </html>
