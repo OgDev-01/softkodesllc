@@ -156,6 +156,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: black;
     color: #ffffff;
     font-family: "DM Sans", sans-serif;
@@ -176,8 +177,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       background-color: black;
       color: #ffffff;
+      opacity: 0.8;
       font-family: "DM Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -186,7 +189,29 @@
       /* identical to box height, or 32px */
       text-align: center;
       letter-spacing: -0.01em;
-      padding: 60px; // color: #ffffff;
+      padding: 60px 30px; // color: #ffffff;
+    }
+    .privacy-wrap {
+      display: flex;
+      flex-direction: column;
+      // background-color: red;
+      width: 70%;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      @media screen and(min-width: 44em) {
+        display: flex;
+        flex-direction: row;
+        // background-color: red;
+        width: 90%;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+
+      a {
+        color: #ffffff;
+        opacity: 0.8;
+      }
     }
   }
 }

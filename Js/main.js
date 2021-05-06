@@ -41,6 +41,13 @@ $(document).ready(function () {
   $("a").mouseleave(function () {
     $(".cursor-custom").removeClass("hovered");
   });
+  $(".budget-btn-wrap li").mouseover(function () {
+    $(".cursor-custom").addClass("hovered");
+  });
+
+  $(".budget-btn-wrap li").mouseleave(function () {
+    $(".cursor-custom").removeClass("hovered");
+  });
 
   // var loaded = false;
 });
@@ -53,4 +60,12 @@ $(".refresh").each(function () {
   } else {
     $(this).removeClass("active");
   }
+});
+
+$(".budget-btn-wrap li").each((e) => {
+  $(".budget-btn-wrap li").click(() => {
+    $(".budget-btn-wrap li").removeClass("selected");
+    $(this).addClass("selected");
+  });
+  // e.preventDefault();
 });
