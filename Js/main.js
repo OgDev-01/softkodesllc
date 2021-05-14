@@ -49,6 +49,42 @@ $(document).ready(function () {
     $(".cursor-custom").removeClass("hovered");
   });
 
+  $(".burger-menu").mouseover(function () {
+    $(".cursor-custom").addClass("hovered");
+  });
+
+  $(".burger-menu").mouseleave(function () {
+    $(".cursor-custom").removeClass("hovered");
+  });
+
+  $(".nav-icon").mouseover(function () {
+    $(".cursor-custom").addClass("hovered");
+  });
+
+  $(".nav-icon").mouseleave(function () {
+    $(".cursor-custom").removeClass("hovered");
+  });
+
+  // Animate move Handler
+  const link = document.querySelectorAll(".nav-item");
+  // const cursor = document.querySelector(".cursor");
+
+  const animateit = function (e) {
+    const span = this.querySelector(".refresh");
+    const { offsetX: x, offsetY: y } = e,
+      { offsetWidth: width, offsetHeight: height } = this,
+      move = 15,
+      xMove = (x / width) * (move * 2) - move,
+      yMove = (y / height) * (move * 2) - move;
+
+    span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+    if (e.type === "mouseleave") span.style.transform = "";
+  };
+
+  link.forEach((b) => b.addEventListener("mousemove", animateit));
+  link.forEach((b) => b.addEventListener("mouseleave", animateit));
+
   // var loaded = false;
 });
 

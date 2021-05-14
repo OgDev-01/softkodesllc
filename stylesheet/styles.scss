@@ -60,7 +60,7 @@
   }
 }
 .hovered {
-  transform: scale(10);
+  transform: scale(8);
   transition: transform 0.4s ease-in-out;
   // opacity: 0.2;
   // border: 1px solid rgba(128, 128, 128, 0.445);
@@ -790,10 +790,10 @@
     margin-top: 150px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #000;
     color: #ffffff;
     opacity: 0.8;
     font-family: "DM Sans", sans-serif;
@@ -804,7 +804,7 @@
     /* identical to box height, or 32px */
     text-align: center;
     letter-spacing: -0.01em;
-    padding: 60px 30px; // color: #ffffff;
+    padding: 120px 30px; // color: #ffffff;
   }
 
   .privacy-wrap {
@@ -818,16 +818,18 @@
 
     @media screen and(min-width: 44em) {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       // background-color: red;
-      width: 70%;
+      width: 40%;
       justify-content: space-between;
+      align-items: flex-start;
       margin-bottom: 30px;
+      padding: 0 50px;
     }
 
     a {
       color: #ffffff;
-      opacity: 0.8;
+      opacity: 1;
       margin: {
         top: 10px;
         bottom: 10px;
@@ -835,8 +837,118 @@
 
       @media screen and(min-width: 44em) {
         color: #ffffff;
-        opacity: 0.8;
+        opacity: 1;
       }
+    }
+    p {
+      text-align: left;
+      opacity: 0.8;
+      color: #ffffff;
+    }
+  }
+  .social-foot-wrap {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // background-color: red;
+    margin: {
+      top: auto;
+      bottom: auto;
+    }
+    li {
+      width: 40%;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      font-family: "DM SANS";
+      font-weight: normal;
+      font-style: normal;
+      color: #ffffff;
+      display: inline-block;
+      width: 60%;
+      // background-color: red;
+      // border: 1px solid #ffffff;
+      margin-top: 20px;
+      text-align: left;
+      opacity: 0.9;
+    }
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+}
+
+.career-card-wrap {
+  width: 100%;
+  height: auto;
+  padding: 100px;
+
+  .career-card {
+    width: 100%;
+    height: 650px;
+    // background-color: red;
+    // border: 1px solid #000;
+    display: flex;
+    margin-top: 80px;
+
+    .career-img {
+      width: 50%;
+      height: 100%;
+      background: url(/images/career-img1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .career-txt {
+      padding: 130px 80px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+
+      h2 {
+        font-family: "DM SANS";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+
+        color: #000000;
+      }
+      p {
+        margin-top: 20px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 163.5%;
+        /* or 25px */
+
+        // text-align: center;
+        letter-spacing: 0.05em;
+
+        color: #000000;
+      }
+    }
+    .ct2 {
+      order: 1;
+      width: 50%;
+    }
+    .ci2 {
+      order: 2;
+    }
+    .ct4 {
+      order: 1;
+      width: 50%;
+    }
+    .ci4 {
+      order: 2;
     }
   }
 }

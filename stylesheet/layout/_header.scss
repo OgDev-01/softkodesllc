@@ -48,13 +48,14 @@
   .burger-menu {
     width: 35px;
     height: 35px;
+    // background-color: #ffffff;
     // float: right;
     margin-right: 15px;
     margin-left: auto;
     position: relative;
     border-radius: 7px;
     z-index: 99;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in-out;
     // border: 1px solid #000000;
     .trd {
       top: 20px;
@@ -64,6 +65,10 @@
       cursor: pointer;
     }
 
+    &:hover .nav-icon {
+      background-color: #ffffff;
+    }
+
     .nav-icon {
       position: absolute;
       width: 70%;
@@ -71,15 +76,30 @@
       background-color: #000000;
       transition: all 0.5s ease-in;
       margin: 0 auto;
+
+      @media screen and(min-width: 44em) {
+        width: 70%;
+      }
     }
     // media for desktop
     @media screen and (min-width: 44em) {
-      display: none;
+      // display: none;
+      position: fixed;
+      right: 100px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      // background-color: red;
     }
 
     .ist {
       top: 9px;
       left: 5px;
+
+      @media screen and(min-width: 44em) {
+        top: 14px;
+        left: 6px;
+      }
     }
     .second {
       display: none;
@@ -88,11 +108,18 @@
     .third {
       bottom: 9px;
       left: 5px;
+      @media screen and(min-width: 44em) {
+        bottom: 14px;
+        left: 6px;
+      }
     }
     .rotate-1 {
       transform: rotate(45deg);
       top: 16px;
       transition: all 0.5s ease-in;
+      @media screen and(min-width: 44em) {
+        top: 20px;
+      }
     }
     .rotate-2 {
       transform: rotate(-45deg);
@@ -114,37 +141,59 @@
     top: 0;
     left: 0;
     // position: relative;
-    z-index: 9;
+    // z-index: 9;
     // max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
     z-index: 10;
 
     @media screen and (min-width: 44em) {
       display: flex;
-      height: auto;
-      // background-color: green;
-      width: 50%;
-      justify-content: space-between;
+      // height: auto;
+      background-color: #ececec8f;
+      width: 100%;
+      // justify-content: space-between;
       align-items: center;
       flex-direction: row;
-      max-height: 50px;
-      opacity: 1;
-      position: relative;
-      background-color: transparent;
+      height: 100vh;
+      max-height: 100vh;
+      opacity: 0;
+      visibility: hidden;
+      // display: none;
+      position: fixed;
+      right: 0;
+      margin-left: auto;
+      // box-shadow: ;
+      z-index: 10;
     }
+    .li-contain {
+      width: 100%;
+      background-color: #ffffff;
+      height: 100%;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
+      @media screen and(min-width: 44em) {
+        width: 100%;
+      }
+    }
     li {
       list-style: none;
       width: 100%;
       transform: translateX(500px);
-      transition: transform 0.5s ease-in;
+      transition: all 0.5s ease;
       // margin: 200px auto;
       // background-color: gray;
       @media screen and (min-width: 44em) {
-        width: calc(100% / 5);
-        transform: none;
+        // width: calc(100% / 5);
+        // transform: none;
+        width: 30%;
+        margin: 0 auto;
+        // padding: 10px 0;
       }
       // &:hover ~ .cursor-custom {
       //   transform: scale(6);
@@ -155,12 +204,16 @@
         display: block;
         cursor: pointer;
         width: 100%;
+        text-align: center;
+
+        transition: transform 0.1s linear;
         // background-color: wheat;
         // border-right: 1px solid black;
 
-        &:hover {
-          // color: #c18e0b;
-          transition: all 0.5s ease-in;
+        @media screen and(min-width: 44em) {
+          font-size: 50px;
+          text-align: center;
+          padding: 18px 0;
         }
       }
       .active {
@@ -174,7 +227,7 @@
         border: 1px solid #000000;
         margin-left: auto;
         margin-right: auto;
-        opacity: 0.1;
+        opacity: 0;
         @media screen and (min-width: 44em) {
           opacity: 0;
         }
@@ -187,7 +240,7 @@
           border: 1px solid #000000;
           margin-left: auto;
           margin-right: auto;
-          opacity: 0.1;
+          opacity: 0;
           @media screen and (min-width: 44em) {
             opacity: 0;
           }
@@ -202,6 +255,8 @@
 
   .open {
     opacity: 1;
+    // display: block;
+    visibility: visible;
     max-height: 100vh;
     transition: all 0.5s ease-in-out;
   }
