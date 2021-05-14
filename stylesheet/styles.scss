@@ -901,40 +901,84 @@
 .career-card-wrap {
   width: 100%;
   height: auto;
-  padding: 100px;
+  padding: 10px;
+
+  @media screen and(min-width: 44em) {
+    width: 100%;
+    height: auto;
+    padding: 100px;
+  }
 
   .career-card {
     width: 100%;
-    height: 650px;
+    height: 600px;
     // background-color: red;
     // border: 1px solid #000;
     display: flex;
+    flex-direction: column;
     margin-top: 80px;
 
+    @media screen and(min-width:44em) {
+      width: 100%;
+      height: 650px;
+      // background-color: red;
+      // border: 1px solid #000;
+      display: flex;
+      flex-direction: row;
+      margin-top: 80px;
+    }
+
     .career-img {
-      width: 50%;
-      height: 100%;
+      width: 100%;
+      height: 80%;
       background: url(/images/career-img1.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
+
+      @media screen and (min-width: 44em) {
+        width: 50%;
+        height: 100%;
+        background: url(/images/career-img1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
     }
 
     .career-txt {
-      padding: 130px 80px;
-      width: 50%;
+      // padding: 130px 80px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: start;
       align-items: flex-start;
 
+      @media screen and(min-width: 44em) {
+        padding: 130px 80px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+      }
+
       h2 {
         font-family: "DM SANS";
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 35px;
-
+        margin-top: 10px;
         color: #000000;
+
+        @media screen and(min-width: 44em) {
+          font-family: "DM SANS";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 35px;
+
+          color: #000000;
+        }
       }
       p {
         margin-top: 20px;
@@ -952,18 +996,26 @@
       }
     }
     .ct2 {
-      order: 1;
-      width: 50%;
+      @media screen and(min-width: 44em) {
+        order: 1;
+        width: 50%;
+      }
     }
     .ci2 {
-      order: 2;
+      @media screen and (min-width: 44em) {
+        order: 2;
+      }
     }
     .ct4 {
-      order: 1;
-      width: 50%;
+      @media screen and(min-width: 44em) {
+        order: 1;
+        width: 50%;
+      }
     }
     .ci4 {
-      order: 2;
+      @media screen and (min-width: 44em) {
+        order: 2;
+      }
     }
   }
 }
