@@ -847,15 +847,30 @@
     }
   }
   .social-foot-wrap {
-    width: 60%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     // background-color: red;
+
     margin: {
       top: auto;
       bottom: auto;
+    }
+
+    @media screen and (min-width: 44em) {
+      width: 60%;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      // background-color: red;
+
+      margin: {
+        top: auto;
+        bottom: auto;
+      }
     }
     li {
       width: 40%;

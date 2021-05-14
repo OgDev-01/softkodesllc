@@ -3788,7 +3788,7 @@ h1:after {
 }
 
 #foot .social-foot-wrap {
-  width: 60%;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3800,6 +3800,23 @@ h1:after {
       flex-wrap: wrap;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media screen and (min-width: 44em) {
+  #foot .social-foot-wrap {
+    width: 60%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 #foot .social-foot-wrap li {
