@@ -73,6 +73,7 @@
   z-index: 100;
   background: #f8fdff;
   overflow: hidden;
+  display: none;
 }
 
 .finished {
@@ -1006,12 +1007,12 @@ h1 {
 @media screen and (min-width: 44em) {
   .wrapper-inner li a {
     width: 100%;
-    height: 75%;
+    height: 100%;
   }
 }
 
 .wrapper-inner li a .phone {
-  background: url(/images/works-main.png);
+  background: url(/images/Naija-food.jpg);
   background-size: 100% 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -1021,10 +1022,10 @@ h1 {
 
 @media screen and (min-width: 44em) {
   .wrapper-inner li a .phone {
-    width: 90%;
-    height: 90%;
-    background: url(/images/first-image.png);
-    background-size: 65% 85%;
+    width: 100%;
+    height: 100%;
+    background: url(/images/Naija-food.jpg);
+    background-size: 100% 90%;
     background-position: bottom;
     background-repeat: no-repeat;
   }
@@ -2971,9 +2972,9 @@ h1:after {
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: normal;
-    font-size: 120px;
-    line-height: 160px;
-    text-align: center;
+    font-size: 85px;
+    line-height: 130px;
+    text-align: left;
     color: #000000;
   }
 }
@@ -3681,7 +3682,7 @@ h1:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: black;
+  background-color: #000000;
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
   font-style: normal;
@@ -3692,10 +3693,6 @@ h1:after {
   text-align: center;
   letter-spacing: -0.01em;
   padding: 25px;
-}
-
-#foot span {
-  opacity: 0.8;
 }
 
 @media screen and (min-width: 44em) {
@@ -3717,7 +3714,6 @@ h1:after {
             flex-direction: row;
     background-color: #000;
     color: #ffffff;
-    opacity: 0.8;
     font-family: "DM Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -3743,7 +3739,7 @@ h1:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 30px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 @media screen and (min-width: 44em) {
@@ -3770,6 +3766,7 @@ h1:after {
 #foot .privacy-wrap a {
   color: #ffffff;
   opacity: 1;
+  text-decoration: none;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -3783,7 +3780,7 @@ h1:after {
 
 #foot .privacy-wrap p {
   text-align: left;
-  opacity: 0.8;
+  opacity: 0.6;
   color: #ffffff;
 }
 
