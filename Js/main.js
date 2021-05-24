@@ -86,22 +86,45 @@ $(document).ready(function () {
   link.forEach((b) => b.addEventListener("mouseleave", animateit));
 
   // var loaded = false;
-});
 
-// Active class handler
-let path = window.location.href;
-$(".refresh").each(function () {
-  if (this.href === path) {
-    $(this).addClass("active");
-  } else {
-    $(this).removeClass("active");
-  }
-});
-
-$(".budget-btn-wrap li").each((e) => {
-  $(".budget-btn-wrap li").click(() => {
-    $(".budget-btn-wrap li").removeClass("selected");
-    $(this).addClass("selected");
+  // Active class handler
+  let path = window.location.href;
+  $(".refresh").each(function () {
+    if (this.href === path) {
+      $(this).addClass("active");
+    } else {
+      $(this).removeClass("active");
+    }
   });
-  // e.preventDefault();
+
+  $(".budget-btn-wrap li").each((e) => {
+    $(".budget-btn-wrap li").click(() => {
+      $(".budget-btn-wrap li").removeClass("selected");
+      $(this).addClass("selected");
+    });
+    // e.preventDefault();
+  });
+
+  $("#web-select").each((e) => {
+    $(".head-list").click(function (e) {
+      e.preventDefault();
+      $(this).find(".select-list").toggleClass("revealed");
+      var currentElement = $(this).find(".select-list");
+      var currentIcon = $(this)
+        .find(".abc")
+        .find(".openings")
+        .find(".icon-right");
+      if (currentElement.hasClass("revealed")) {
+        setTimeout(() => {
+          currentIcon.removeClass("fa-chevron-right");
+          currentIcon.addClass("fa-chevron-down");
+        }, 100);
+      } else {
+        setTimeout(() => {
+          currentIcon.addClass("fa-chevron-right");
+          currentIcon.removeClass("fa-chevron-down");
+        }, 500);
+      }
+    });
+  });
 });
