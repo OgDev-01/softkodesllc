@@ -25,20 +25,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
 
     <!-- Aos animation linking -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="cursor-custom"></div>
-    <div class="container">
+    <div class="container" data-scroll-container>
       <!-- <div class="gradient-1"></div>
       <div class="gradient-2"></div>
       <div class="gradient-3"></div> -->
-      <section class="first-section">
+      <section class="first-section" data-scroll>
         <nav class="header">
           <div class="logo-wrap">
-            <a href="#" class="logo"></a>
+            <a href="/index.html" class="logo"></a>
             <div class="burger-menu" id="burger">
               <div class="nav-icon ist" id="icon-1"></div>
               <!-- <div class="nav-icon trd" id="icon-2"></div> -->
@@ -48,7 +52,7 @@
           <ul class="nav-list" id="list-items">
             <div class="li-contain">
               <li class="nav-item">
-                <a href="./home.html" class="refresh">Work</a>
+                <a href="./works.html" class="refresh">Work</a>
               </li>
               <li class="nav-item">
                 <a href="./about.html" class="refresh">About</a>
@@ -69,7 +73,7 @@
           </ul>
         </nav>
       </section>
-      <div class="career-card-wrap">
+      <!-- <div class="career-card-wrap" data-scroll-section>
         <div class="career-caption">
           <h1>Join our team.</h1>
         </div>
@@ -118,7 +122,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="career-head">
         <h2><b>Choose a department</b></h2>
@@ -227,7 +231,8 @@
         <div class="privacy-wrap">
           <a href="#">Info@soft-kode.com</a>
           <p>km 5 Refinery road opp Chicken Republic. Warri Delta state</p>
-          <a href="#">Privacy policy</a>
+          <a href="/privacy-policy.html">Privacy policy</a>
+          <a href="terms.html">Terms and conditions</a>
         </div>
         <div class="social-foot-wrap">
           <li><a href="#">Instagram</a></li>
@@ -247,6 +252,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
     <script src="./Js/main.js"></script>
+    <script src="/Js/locomotive.js"></script>
 
     <!-- AOS init script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

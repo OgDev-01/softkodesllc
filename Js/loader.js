@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
   $(this).scrollTop(0);
   function progress() {
     // $(window).css("scroll-behaviour", "none");
@@ -19,11 +19,11 @@ $(function () {
       if (count == 100 && per == 100) {
         percent.classList.add("text-blink");
         text.style.display = "block";
-        setInterval(() => {
+        setTimeout(() => {
           $(".loading").addClass("finished");
           $("body").css("overflow", "auto");
         }, 1000);
-        setInterval(() => {
+        setTimeout(() => {
           $("#landed").css("opacity", "1");
           $(".products").addClass("animate__fadeInUp");
           $("#lorems").addClass("animate__fadeInUp");

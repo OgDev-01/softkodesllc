@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $(this).scrollTop(0);
   let menuClicked = false;
   let iconOne = document.getElementById("icon-1");
   // let iconTwo = document.getElementById("icon-2");
@@ -97,12 +98,27 @@ $(document).ready(function () {
     }
   });
 
-  $(".budget-btn-wrap li").each((e) => {
-    $(".budget-btn-wrap li").click(() => {
-      $(".budget-btn-wrap li").removeClass("selected");
+  $(".budget").each(() => {
+    $(".budget").click(function () {
+      $(".budget").removeClass("selected");
       $(this).addClass("selected");
+
+      // elementClicked = true;
     });
-    // e.preventDefault();
+  });
+  // });
+
+  // Project link handler
+  $(".p-link-items").each(() => {
+    $(".p-link-items").click(function () {
+      var innerHtml = $(this).text();
+      $(".p-link-items").removeClass("s-link");
+      $(this).addClass("s-link");
+      $(".filter-btn")
+        .text(innerHtml)
+        .append(`<i class="fas fa-arrow-down"></i>`);
+      $(".project-link").removeClass("clicked");
+    });
   });
 
   $("#web-select").each((e) => {
@@ -126,5 +142,11 @@ $(document).ready(function () {
         }, 500);
       }
     });
+  });
+
+  // Project links navigation
+
+  $(".filter-btn").click(() => {
+    $(".project-link").toggleClass("clicked");
   });
 });

@@ -24,32 +24,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    /> -->
+    />
   </head>
   <body>
     <div class="cursor-custom"></div>
-    <div class="container">
-      <div class="gradient-1"></div>
+    <div class="container" data-scroll-container>
+      <!-- <div class="gradient-1"></div>
       <div class="gradient-2"></div>
-      <div class="gradient-3"></div>
+      <div class="gradient-3"></div> -->
       <section class="first-section">
         <nav class="header">
           <div class="logo-wrap">
-            <a href="#" class="logo"></a>
+            <a href="/index.html" class="logo"></a>
 
             <div class="burger-menu" id="burger">
               <div class="nav-icon ist" id="icon-1"></div>
-              <!-- <div class="nav-icon trd" id="icon-2"></div> -->
               <div class="nav-icon third" id="icon-3"></div>
             </div>
           </div>
           <ul class="nav-list" id="list-items">
             <div class="li-contain">
               <li class="nav-item">
-                <a href="./home.html" class="refresh">Work</a>
+                <a href="./works.html" class="refresh">Work</a>
               </li>
               <li class="nav-item">
                 <a href="./about.html" class="refresh">About</a>
@@ -70,9 +69,10 @@
           </ul>
         </nav>
 
-        <div class="landing" data-scroll-section="">
-          <!-- <span class="num-count num-1">1</span> -->
-          <figure class="animate__animated soft">Softkodes</figure>
+        <div class="landing" data-scroll-section>
+          <figure class="animate__animated soft" data-scroll-section>
+            Softkodes
+          </figure>
           <div class="product-contain p-a">
             <h3
               class="products animate__animated animate__fadeInUp back"
@@ -87,18 +87,14 @@
               clients all around the world.
             </h6>
           </div>
-          <div class="adds-service">
-            <!-- <a href="#">Training</a>
-            <a href="#">Design</a>
-            <a href="#">Development</a> -->
-          </div>
+          <div class="adds-service"></div>
           <div class="arrow-down-wrap abt-arrow">
             <i class="line"></i>
             <i class="arrow-down"></i>
           </div>
         </div>
 
-        <div class="social-wrap" id="scrolls">
+        <div class="social-wrap" id="scrolls" data-scroll-section>
           <div class="scroll-sign">scroll</div>
           <div class="social">
             <a href="#">Instagram</a>
@@ -107,7 +103,7 @@
           </div>
         </div>
       </section>
-      <div class="abt-section">
+      <div class="abt-section" data-scroll-section>
         <h1 id="head">Simply put, we make the impossible possible</h1>
         <div class="img-wrap"></div>
       </div>
@@ -125,7 +121,7 @@
         <div class="brand-img"></div>
       </section>
 
-      <section class="badass">
+      <section class="badass" data-scroll-section>
         <h1>Badass behind the company.</h1>
         <div class="img-card-wrap">
           <div class="card-wrap">
@@ -200,7 +196,7 @@
         </div>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe" data-scroll-section>
         <div class="news-letter">
           <h1>Subscribe to our Newsletter</h1>
           <div class="input-wrap">
@@ -214,7 +210,7 @@
         </div>
       </section>
 
-      <section class="section-six">
+      <section class="section-six" data-scroll-section>
         <div class="contact-us">
           <h1>Drop a message</h1>
           <figure>
@@ -237,7 +233,8 @@
                 >Info@soft-kode.com</a
               >
               <p>km 5 Refinery road opp Chicken Republic. Warri Delta state</p>
-              <a href="#">Privacy policy</a>
+              <a href="./privacy-policy.html">Privacy policy</a>
+              <a href="/terms.html">Terms and conditions</a>
             </div>
             <!-- <span>copyright @ soft-kodes.com</span> -->
             <div class="social-foot-wrap">
@@ -256,13 +253,9 @@
     </div>
 
     <!-- AOS init script -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 
     <!-- Locomotive scroll script -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <!-- Jquery script linking -->
 
     <script
@@ -272,6 +265,11 @@
     ></script>
 
     <script src="./Js/main.js"></script>
-    <!-- <script src="/Js/locomotive.js"></script> -->
+    <script src="/Js/locomotive.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

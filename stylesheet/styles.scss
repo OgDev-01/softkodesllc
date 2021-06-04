@@ -27,12 +27,26 @@
 @import "./pages/badass";
 @import "./pages/5th-section";
 @import "./pages/footer";
+@import "./pages/privacy";
+@import "./pages/works";
+@import "./pages/terms";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.795);
+    border-radius: 30px;
+  }
   body {
     height: 100vh;
     cursor: auto;
@@ -685,10 +699,10 @@
         justify-content: space-between;
         flex-wrap: wrap;
       }
-      li {
+      .budget {
         padding: 20px 20px;
         border-radius: 40px;
-        border: none;
+        // border: none;
         border: 1px solid #0000001c;
         font-size: 15px;
         font-family: "DM Sans";
@@ -699,13 +713,13 @@
         @media screen and(min-width:44em) {
           padding: 25px 30px;
           border-radius: 40px;
-          border: none;
+          // border: none;
           border: 1px solid #0000001c;
           font-size: 20px;
           font-family: "DM Sans";
           font-style: normal;
           font-weight: bold;
-          background: transparent;
+          // background: transparent;
         }
 
         // margin
@@ -721,27 +735,16 @@
         background: #000000;
         color: #ffffff;
         transition: all 0.5s ease-in;
-        padding: 20px 20px;
-        border-radius: 40px;
-        border: none;
-        border: 1px solid #0000001c;
-        font-size: 15px;
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: bold;
+        // padding: 20px 20px;
+        // border-radius: 40px;
+        // border: none;
+        // border: 1px solid #0000001c;
+        // font-size: 15px;
+        // font-family: "DM Sans";
+        // font-style: normal;
+        // font-weight: bold;
         // background: transparent;
-        list-style: none;
-        @media screen and(min-width: 44em) {
-          padding: 25px 35px;
-          border-radius: 40px;
-          border: none;
-          border: 1px solid #0000001c;
-          font-size: 20px;
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: bold;
-          // background: transparent;
-        }
+        // list-style: none;
       }
     }
   }
@@ -934,18 +937,30 @@
       flex-direction: row;
       margin-top: 80px;
     }
+    .ci1 {
+      background: url(/images/career-img1.jpg);
+    }
+    .ci2 {
+      background: url(/images/career-img2.jpg);
+    }
+    .ci3 {
+      background: url(/images/career-img4.jpg);
+    }
+    .ci4 {
+      background: url(/images/career-img3.jpg);
+    }
 
     .career-img {
       width: 100%;
       height: 80%;
-      background: url(/images/career-img1.jpg);
+      // background: url(/images/career-img1.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
 
       @media screen and (min-width: 44em) {
         width: 50%;
         height: 100%;
-        background: url(/images/career-img1.jpg);
+        // background: url(/images/career-img1.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }

@@ -1,0 +1,54 @@
+.privacy-policy-wrap {
+  width: 100%;
+  height: auto;
+
+  @media screen and(min-width: 44em) {
+    padding: 50px 250px;
+  }
+
+  .privacy-head {
+    width: 100%;
+
+    h1 {
+      width: 100%;
+      padding-left: 0;
+      // background-color: red;
+      font-size: 100px;
+      font-family: "DM SANS";
+    }
+  }
+
+  .p-statement {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+
+    h2 {
+      font-family: "DM SANS";
+      font-size: 35px;
+      //   line-height: 100px;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-family: "DM SANS";
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      line-height: 150%;
+    }
+    ol {
+      list-style: lower-alpha;
+      margin-bottom: 30px;
+      font-family: "DM SANS";
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      line-height: 150%;
+      margin-left: 20px;
+
+      li {
+        margin-top: 20px;
+        padding-left: 20px;
+      }
+    }
+  }
+}
