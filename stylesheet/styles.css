@@ -2863,23 +2863,41 @@ h1:after {
 
 .all-project {
   width: 100%;
-  padding: 50px 190px 0 190px;
+  padding: 40px 15px;
+}
+
+@media screen and (min-width: 44em) {
+  .all-project {
+    padding: 50px 190px 0 190px;
+  }
 }
 
 .all-project .filter-anchor {
-  font-size: 25px;
+  font-size: 7vw;
   font-family: "DM SANS";
   opacity: 0.6;
   display: block;
 }
 
+@media screen and (min-width: 44em) {
+  .all-project .filter-anchor {
+    font-size: 2vw;
+  }
+}
+
 .all-project .filter-btn {
   font-family: "DM SANS";
-  font-size: 50px;
+  font-size: 12vw;
   line-height: 90px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+@media screen and (min-width: 44em) {
+  .all-project .filter-btn {
+    font-size: 5vw;
+  }
 }
 
 .all-project .filter-btn:hover {
@@ -2909,22 +2927,48 @@ h1:after {
 
 .all-project .project-link {
   width: 90%;
-  height: 100px;
+  height: auto;
   max-height: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 10px;
   overflow: hidden;
   opacity: 0;
+}
+
+@media screen and (min-width: 44em) {
+  .all-project .project-link {
+    width: 90%;
+    height: 100px;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 10px;
+    overflow: hidden;
+    opacity: 0;
+  }
 }
 
 .all-project .project-link .p-link-items {
@@ -2951,6 +2995,13 @@ h1:after {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   opacity: 1;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 44em) {
+  .all-project .clicked {
+    margin-top: 10px;
+  }
 }
 
 .all-project .projects-wrap {
@@ -2958,6 +3009,10 @@ h1:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -2967,17 +3022,50 @@ h1:after {
   overflow: hidden;
 }
 
+@media screen and (min-width: 44em) {
+  .all-project .projects-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
 .all-project .projects-wrap .projects {
-  width: 46%;
+  width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 44em) {
+  .all-project .projects-wrap .projects {
+    width: 46%;
+    height: auto;
+  }
 }
 
 .all-project .projects-wrap .projects .projects-card {
   width: 100%;
-  height: 55rem;
+  height: 45rem;
   margin-bottom: 40px;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+@media screen and (min-width: 44em) {
+  .all-project .projects-wrap .projects .projects-card {
+    width: 100%;
+    height: 55rem;
+    margin-bottom: 40px;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
 }
 
 .all-project .projects-wrap .projects .projects-card .app-one {
@@ -3028,6 +3116,16 @@ h1:after {
   display: block;
 }
 
+@media screen and (min-width: 44em) {
+  .all-project .projects-wrap .projects .projects-card .img-description {
+    width: 100%;
+    height: 80%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+
 .all-project .projects-wrap .projects-right {
   margin-top: 200px;
   -webkit-box-ordinal-group: 3;
@@ -3037,7 +3135,7 @@ h1:after {
 
 .all-project .selected-pro {
   visibility: visible;
-  max-height: 450rem;
+  max-height: 2000rem;
   margin-top: 200px;
 }
 

@@ -1,21 +1,31 @@
 .all-project {
   width: 100%;
-  padding: 50px 190px 0 190px;
+  padding: 40px 15px;
   //   background-color: red;
-
+  @media screen and(min-width: 44em) {
+    padding: 50px 190px 0 190px;
+  }
   .filter-anchor {
-    font-size: 25px;
+    font-size: 7vw;
     font-family: "DM SANS";
     opacity: 0.6;
     display: block;
+
+    @media screen and(min-width: 44em) {
+      font-size: 2vw;
+    }
     // margin-top: 200px;
     // position: absolute;
   }
   .filter-btn {
     font-family: "DM SANS";
-    font-size: 50px;
+    font-size: 12vw;
     line-height: 90px;
     width: max-content;
+
+    @media screen and (min-width: 44em) {
+      font-size: 5vw;
+    }
 
     &:hover {
       cursor: pointer;
@@ -41,16 +51,31 @@
 
   .project-link {
     width: 90%;
-    height: 100px;
+    height: auto;
     max-height: 0;
     transition: all 0.5s ease-in-out;
     // background: red;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     margin-top: 10px;
     overflow: hidden;
     opacity: 0;
+
+    @media screen and(min-width: 44em) {
+      width: 90%;
+      height: 100px;
+      max-height: 0;
+      transition: all 0.5s ease-in-out;
+      // background: red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      overflow: hidden;
+      opacity: 0;
+    }
 
     .p-link-items {
       font-family: "DM SANS";
@@ -77,11 +102,17 @@
     max-height: 400px;
     transition: all 0.5s ease-in-out;
     opacity: 1;
+    margin-top: 50px;
+
+    @media screen and(min-width: 44em) {
+      margin-top: 10px;
+    }
   }
 
   .projects-wrap {
     width: 100%;
     display: flex;
+    flex-direction: column;
     height: auto;
     justify-content: space-between;
     visibility: hidden;
@@ -89,17 +120,40 @@
     overflow: hidden;
     // background: red;
 
-    .projects {
-      width: 46%;
+    @media screen and (min-width: 44em) {
+      width: 100%;
+      display: flex;
       height: auto;
+      justify-content: space-between;
+      visibility: hidden;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .projects {
+      width: 100%;
+      height: auto;
+
+      @media screen and(min-width: 44em) {
+        width: 46%;
+        height: auto;
+      }
 
       .projects-card {
         width: 100%;
-        height: 55rem;
+        height: 45rem;
         // background-color: red;
-        // border: 1px solid #000000;
+        // border: 1px solid #b90101;
         margin-bottom: 40px;
         transform: scale(1.02);
+
+        @media screen and(min-width: 44em) {
+          width: 100%;
+          height: 55rem;
+          // background-color: red;
+          // border: 1px solid #000000;
+          margin-bottom: 40px;
+          transform: scale(1.02);
+        }
 
         .app-one {
           background: url(/images/app-1.jpg);
@@ -139,6 +193,16 @@
           background-size: 100% 100%;
           background-repeat: no-repeat;
           display: block;
+          // border-radius: 20%;
+
+          @media screen and(min-width: 44em) {
+            width: 100%;
+            height: 80%;
+            // background: url(/images/app-1.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: block;
+          }
         }
       }
     }
@@ -149,7 +213,7 @@
   }
   .selected-pro {
     visibility: visible;
-    max-height: 450rem;
+    max-height: 2000rem;
     margin-top: 200px;
   }
 }
