@@ -2988,6 +2988,10 @@ h1:after {
     margin-top: 10px;
     overflow: hidden;
     opacity: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -3055,6 +3059,10 @@ h1:after {
     visibility: hidden;
     max-height: 0;
     overflow: hidden;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
