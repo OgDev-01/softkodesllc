@@ -277,19 +277,6 @@
   }
 }
 
-.header a {
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 29px;
-  /* identical to box height */
-  letter-spacing: -0.03em;
-  text-decoration: none;
-  color: #000000;
-  padding: 10px 0;
-}
-
 .header .logo-wrap {
   width: 100%;
   display: -webkit-box;
@@ -339,10 +326,6 @@
   cursor: pointer;
 }
 
-.header .burger-menu:hover .nav-icon {
-  background-color: #ffffff;
-}
-
 .header .burger-menu .nav-icon {
   position: absolute;
   width: 70%;
@@ -366,6 +349,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+  }
+  .header .burger-menu:hover .nav-icon {
+    background-color: #ffffff;
   }
 }
 
@@ -436,7 +422,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ffffff;
+  background: red;
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -444,6 +430,8 @@
   left: 0;
   overflow: hidden;
   opacity: 0;
+  visibility: hidden;
+  max-height: 0;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   z-index: 10;
@@ -466,11 +454,12 @@
     height: 100vh;
     max-height: 100vh;
     opacity: 0;
-    visibility: hidden;
     position: fixed;
     right: 0;
     margin-left: auto;
     z-index: 10;
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
   }
 }
 
@@ -503,8 +492,6 @@
 .header .nav-list li {
   list-style: none;
   width: 100%;
-  -webkit-transform: translateX(500px);
-          transform: translateX(500px);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -522,6 +509,16 @@
   cursor: pointer;
   width: 100%;
   text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 29px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 0;
   -webkit-transition: -webkit-transform 0.1s linear;
   transition: -webkit-transform 0.1s linear;
   transition: transform 0.1s linear;
@@ -575,12 +572,17 @@
 .header .nav-list .li-visible {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transform: transform 0.5s ease-in;
-          transform: transform 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  max-width: 100%;
+  max-height: 100vh;
+  opacity: 1;
 }
 
 .header .open {
   opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   visibility: visible;
   max-height: 100vh;
   -webkit-transition: all 0.5s ease-in-out;
@@ -2584,6 +2586,7 @@ h1 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 80px;
   line-height: 60px;
   padding: 50px;
 }
@@ -2615,12 +2618,12 @@ h1:after {
   background-size: 100% 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 @media screen and (min-width: 44em) {
   .brand-img {
-    background: url(/images/brand.png) no-repeat;
+    background: url(/images/brand-mobile.png) no-repeat;
     background-size: 100% 100%;
     width: 70vw;
     height: 80vh;
@@ -3424,13 +3427,25 @@ h1:after {
   width: 100%;
   background: #f8fdff;
   height: auto;
-  margin-top: 250px;
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 44em) {
+  .section-six {
+    margin-top: 100px;
+  }
 }
 
 .abt-section {
   width: 100%;
   height: auto;
-  margin-top: 250px;
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 44em) {
+  .abt-section {
+    margin-top: 100px;
+  }
 }
 
 .abt-section #head {
@@ -3516,14 +3531,14 @@ h1:after {
 .brand {
   width: 100vw;
   height: auto;
-  margin-top: 250px;
+  margin-top: 80px;
 }
 
 @media screen and (min-width: 44em) {
   .brand {
     width: 100vw;
     height: auto;
-    margin-top: 250px;
+    margin-top: 100px;
   }
 }
 
@@ -3703,8 +3718,8 @@ h1:after {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 30px;
   grid-column-gap: 30px;
-  grid-row-gap: 200px;
-  margin-top: 150px;
+  grid-row-gap: 100px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 44em) {
@@ -3714,14 +3729,14 @@ h1:after {
     display: grid;
     -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 200px;
+    padding: 100px 200px;
     grid-column-gap: 30px;
-    grid-row-gap: 200px;
+    grid-row-gap: 150px;
   }
 }
 
 .courses-card-wrap .courses-grid .grid {
-  height: 350px;
+  height: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3737,13 +3752,13 @@ h1:after {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #000000;
+  padding: 10px 0px;
 }
 
 .courses-card-wrap .courses-grid .grid .c-card-img {
   width: 80%;
   height: 220px;
   background-repeat: no-repeat;
-  background: url(/images/course-1.png);
   background-position: center;
   background-size: 100% 100%;
   position: absolute;
@@ -3752,9 +3767,9 @@ h1:after {
 }
 
 .courses-card-wrap .courses-grid .grid .c-card-body {
-  padding: 20px 20px 0 20px;
+  padding: 10px 20px 10px 20px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: -50px;
 }
 
 .courses-card-wrap .courses-grid .grid .c-card-body h2 {
@@ -3762,16 +3777,61 @@ h1:after {
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
-  line-height: 45px;
+  line-height: 50px;
   text-align: center;
+  margin-bottom: 10px;
   color: #000000;
+  border-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courses-card-wrap .courses-grid .grid .c-card-body h2:after {
+  content: "";
+  display: block;
+  border: 1px solid #000;
+  width: 55%;
+  opacity: 0.3;
+}
+
+.courses-card-wrap .courses-grid .grid .c-card-body h4 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
 }
 
 .courses-card-wrap .courses-grid .grid .c-card-body p {
   font-family: "Rubik";
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+  font-weight: lighter;
+  font-size: 13.5px;
   line-height: 163.5%;
   /* or 25px */
   text-align: center;
@@ -3861,7 +3921,7 @@ h1:after {
   }
 }
 
-.contact-us-form-wrap .form-section {
+.form-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3869,7 +3929,7 @@ h1:after {
   height: auto;
 }
 
-.contact-us-form-wrap form {
+.form-section form {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -3886,7 +3946,7 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .contact-us-form-wrap form {
+  .form-section form {
     width: 100%;
     height: auto;
     display: -webkit-box;
@@ -3903,7 +3963,7 @@ h1:after {
   }
 }
 
-.contact-us-form-wrap form input {
+.form-section form input {
   border: none;
   border-bottom: 3px solid #00000021;
   height: 70px;
@@ -3921,7 +3981,7 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .contact-us-form-wrap form input {
+  .form-section form input {
     border: none;
     border-bottom: 3px solid #00000021;
     height: 80px;
@@ -3939,20 +3999,20 @@ h1:after {
   }
 }
 
-.contact-us-form-wrap form input:hover {
+.form-section form input:hover {
   border-bottom: 3px solid #0000009c;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.contact-us-form-wrap form input:focus {
+.form-section form input:focus {
   outline: none;
   border-bottom: 3px solid #0000009c;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.contact-us-form-wrap form input::-webkit-input-placeholder {
+.form-section form input::-webkit-input-placeholder {
   font-size: 25px;
   font-family: "DM Sans";
   font-style: normal;
@@ -3960,7 +4020,7 @@ h1:after {
   opacity: 0.3;
 }
 
-.contact-us-form-wrap form input:-ms-input-placeholder {
+.form-section form input:-ms-input-placeholder {
   font-size: 25px;
   font-family: "DM Sans";
   font-style: normal;
@@ -3968,7 +4028,7 @@ h1:after {
   opacity: 0.3;
 }
 
-.contact-us-form-wrap form input::-ms-input-placeholder {
+.form-section form input::-ms-input-placeholder {
   font-size: 25px;
   font-family: "DM Sans";
   font-style: normal;
@@ -3976,7 +4036,7 @@ h1:after {
   opacity: 0.3;
 }
 
-.contact-us-form-wrap form input::placeholder {
+.form-section form input::placeholder {
   font-size: 25px;
   font-family: "DM Sans";
   font-style: normal;
@@ -3985,28 +4045,28 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .contact-us-form-wrap form input::-webkit-input-placeholder {
+  .form-section form input::-webkit-input-placeholder {
     font-size: 30px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
     opacity: 0.3;
   }
-  .contact-us-form-wrap form input:-ms-input-placeholder {
+  .form-section form input:-ms-input-placeholder {
     font-size: 30px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
     opacity: 0.3;
   }
-  .contact-us-form-wrap form input::-ms-input-placeholder {
+  .form-section form input::-ms-input-placeholder {
     font-size: 30px;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
     opacity: 0.3;
   }
-  .contact-us-form-wrap form input::placeholder {
+  .form-section form input::placeholder {
     font-size: 30px;
     font-family: "DM Sans";
     font-style: normal;
@@ -4015,7 +4075,7 @@ h1:after {
   }
 }
 
-.contact-us-form-wrap form #budget-p {
+.form-section form #budget-p {
   font-size: 25px;
   font-family: "DM Sans";
   font-style: normal;
@@ -4025,7 +4085,7 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .contact-us-form-wrap form #budget-p {
+  .form-section form #budget-p {
     font-size: 30px;
     font-family: "DM Sans";
     font-style: normal;
@@ -4035,7 +4095,7 @@ h1:after {
   }
 }
 
-.contact-us-form-wrap form .budget-btn-wrap {
+.form-section form .budget-btn-wrap {
   margin-top: 40px;
   width: 100%;
   display: -webkit-box;
@@ -4046,7 +4106,7 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .contact-us-form-wrap form .budget-btn-wrap {
+  .form-section form .budget-btn-wrap {
     margin-top: 40px;
     width: 75%;
     display: -webkit-box;
@@ -4060,7 +4120,7 @@ h1:after {
   }
 }
 
-.contact-us-form-wrap form .budget-btn-wrap .budget {
+.form-section form .budget-btn-wrap .budget {
   padding: 20px 20px;
   border-radius: 40px;
   border: 1px solid #0000001c;
@@ -4072,7 +4132,7 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .contact-us-form-wrap form .budget-btn-wrap .budget {
+  .form-section form .budget-btn-wrap .budget {
     padding: 25px 30px;
     border-radius: 40px;
     border: 1px solid #0000001c;
@@ -4083,7 +4143,7 @@ h1:after {
   }
 }
 
-.contact-us-form-wrap form .budget-btn-wrap .budget:hover {
+.form-section form .budget-btn-wrap .budget:hover {
   background: #000000;
   color: #ffffff;
   -webkit-transition: all 0.3s ease-in;
@@ -4091,7 +4151,7 @@ h1:after {
   cursor: pointer;
 }
 
-.contact-us-form-wrap form .budget-btn-wrap .selected {
+.form-section form .budget-btn-wrap .selected {
   background: #000000;
   color: #ffffff;
   -webkit-transition: all 0.5s ease-in;
@@ -4610,5 +4670,223 @@ h1:after {
   max-height: 300px;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+}
+
+.enrollment-form-wrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px;
+}
+
+@media screen and (min-width: 44em) {
+  .enrollment-form-wrap {
+    padding: 30px 100px;
+  }
+}
+
+.enrollment-form-wrap form {
+  width: 80%;
+  height: auto;
+}
+
+.enrollment-form-wrap form h2 {
+  font-size: 7vw;
+  margin-top: 180px;
+}
+
+@media screen and (min-width: 44em) {
+  .enrollment-form-wrap form h2 {
+    font-size: 3vw;
+    margin-top: 20px;
+  }
+}
+
+.enrollment-form-wrap form input[type="text"],
+.enrollment-form-wrap form input[type="email"] {
+  border: none;
+  border-bottom: 3px solid #00000021;
+  height: 70px;
+  margin-top: 30px;
+  width: 100%;
+  line-height: 120px;
+  font-size: 5vw;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  background-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #000000b6;
+}
+
+@media screen and (min-width: 44em) {
+  .enrollment-form-wrap form input[type="text"],
+  .enrollment-form-wrap form input[type="email"] {
+    border: none;
+    border-bottom: 3px solid #00000021;
+    height: 80px;
+    margin-top: 60px;
+    width: 100%;
+    line-height: 140px;
+    font-size: 2.8vw;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    background-color: transparent;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color: #000000b6;
+  }
+}
+
+.enrollment-form-wrap form input[type="text"]:hover,
+.enrollment-form-wrap form input[type="email"]:hover {
+  border-bottom: 3px solid #0000009c;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.enrollment-form-wrap form input[type="text"]:focus,
+.enrollment-form-wrap form input[type="email"]:focus {
+  outline: none;
+  border-bottom: 3px solid #0000009c;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.enrollment-form-wrap form input[type="text"]::-webkit-input-placeholder,
+.enrollment-form-wrap form input[type="email"]::-webkit-input-placeholder {
+  font-size: 25px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  opacity: 0.3;
+}
+
+.enrollment-form-wrap form input[type="text"]:-ms-input-placeholder,
+.enrollment-form-wrap form input[type="email"]:-ms-input-placeholder {
+  font-size: 25px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  opacity: 0.3;
+}
+
+.enrollment-form-wrap form input[type="text"]::-ms-input-placeholder,
+.enrollment-form-wrap form input[type="email"]::-ms-input-placeholder {
+  font-size: 25px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  opacity: 0.3;
+}
+
+.enrollment-form-wrap form input[type="text"]::placeholder,
+.enrollment-form-wrap form input[type="email"]::placeholder {
+  font-size: 25px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 44em) {
+  .enrollment-form-wrap form input[type="text"]::-webkit-input-placeholder,
+  .enrollment-form-wrap form input[type="email"]::-webkit-input-placeholder {
+    font-size: 30px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.3;
+  }
+  .enrollment-form-wrap form input[type="text"]:-ms-input-placeholder,
+  .enrollment-form-wrap form input[type="email"]:-ms-input-placeholder {
+    font-size: 30px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.3;
+  }
+  .enrollment-form-wrap form input[type="text"]::-ms-input-placeholder,
+  .enrollment-form-wrap form input[type="email"]::-ms-input-placeholder {
+    font-size: 30px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.3;
+  }
+  .enrollment-form-wrap form input[type="text"]::placeholder,
+  .enrollment-form-wrap form input[type="email"]::placeholder {
+    font-size: 30px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    opacity: 0.3;
+  }
+}
+
+.enrollment-form-wrap form .gender-anchor {
+  font-size: clamp(1.8vw, 25px, 3vw);
+  margin-top: 50px;
+}
+
+.enrollment-form-wrap form .radio {
+  width: 35%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.enrollment-form-wrap form .radio label {
+  font-size: clamp(1.3vw, 16px, 2vw);
+}
+
+.enrollment-form-wrap form .cv-anchor {
+  font-size: clamp(1.8vw, 25px, 3vw);
+  margin-top: 15px;
+}
+
+.enrollment-form-wrap form .custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.enrollment-form-wrap form .custom-file-input::before {
+  content: "Select some files";
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3));
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.enrollment-form-wrap form .custom-file-input:hover::before {
+  border-color: black;
+}
+
+.enrollment-form-wrap form .custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 /*# sourceMappingURL=styles.css.map */

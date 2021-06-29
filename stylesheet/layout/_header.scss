@@ -10,20 +10,6 @@
     padding: 40px 0;
   }
 
-  a {
-    font-family: "DM Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 29px;
-    /* identical to box height */
-
-    letter-spacing: -0.03em;
-    text-decoration: none;
-    color: #000000;
-    padding: 10px 0;
-  }
-
   .logo-wrap {
     width: 100%;
     display: flex;
@@ -65,10 +51,6 @@
       cursor: pointer;
     }
 
-    &:hover .nav-icon {
-      background-color: #ffffff;
-    }
-
     .nav-icon {
       position: absolute;
       width: 70%;
@@ -89,6 +71,10 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
+
+      &:hover .nav-icon {
+        background-color: #ffffff;
+      }
       // background-color: red;
     }
 
@@ -134,38 +120,41 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: red;
     height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
     // position: relative;
-    // z-index: 9;
     // max-height: 0;
     overflow: hidden;
+    // display: none;
     opacity: 0;
+    visibility: hidden;
+    max-height: 0;
     transition: all 0.5s ease-in;
     z-index: 10;
+    // transform: translateX(800px);
 
     @media screen and (min-width: 44em) {
       display: flex;
       // height: auto;
       background-color: #ececec8f;
       width: 100%;
-      // justify-content: space-between;
       align-items: center;
       flex-direction: row;
       height: 100vh;
       max-height: 100vh;
       opacity: 0;
-      visibility: hidden;
       // display: none;
+      // visibility: hidden;
       position: fixed;
       right: 0;
       margin-left: auto;
       // box-shadow: ;
       z-index: 10;
+      transform: translateX(1500px);
     }
     .li-contain {
       width: 100%;
@@ -176,6 +165,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      // transform: translateX(500px);
 
       @media screen and(min-width: 44em) {
         width: 100%;
@@ -184,7 +174,6 @@
     li {
       list-style: none;
       width: 100%;
-      transform: translateX(500px);
       transition: all 0.5s ease;
       // margin: 200px auto;
       // background-color: gray;
@@ -205,6 +194,19 @@
         cursor: pointer;
         width: 100%;
         text-align: center;
+        // background-color: red;
+
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 29px;
+        /* identical to box height */
+
+        letter-spacing: -0.03em;
+        text-decoration: none;
+        color: #000000;
+        padding: 10px 0;
 
         transition: transform 0.1s linear;
         // background-color: wheat;
@@ -249,13 +251,17 @@
     }
     .li-visible {
       transform: translateX(0);
-      transform: transform 0.5s ease-in;
+      transition: all 0.5s ease-in;
+      max-width: 100%;
+      max-height: 100vh;
+      opacity: 1;
+      // opacity: ;
     }
   }
 
   .open {
     opacity: 1;
-    // display: block;
+    transform: translateX(0);
     visibility: visible;
     max-height: 100vh;
     transition: all 0.5s ease-in-out;

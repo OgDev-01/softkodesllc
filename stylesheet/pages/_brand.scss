@@ -3,6 +3,7 @@ h1 {
   margin: {
     left: auto;
     right: auto;
+    top: 80px;
   }
   line-height: 60px;
   padding: 50px;
@@ -33,12 +34,12 @@ h1 {
   margin: {
     left: auto;
     right: auto;
-    top: 150px;
+    top: 80px;
   }
 
   @media screen and (min-width: 44em) {
     // background: url(/images/brand-mobile.png);
-    background: url(/images/brand.png) no-repeat;
+    background: url(/images/brand-mobile.png) no-repeat;
     background-size: 100% 100%;
     width: 70vw;
     height: 80vh;

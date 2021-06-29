@@ -11,12 +11,14 @@ $(document).ready(function () {
   $("#burger").on("click", () => {
     if (!menuClicked) {
       listItems.classList.add("open");
-      $(".nav-item").addClass("li-visible");
+      $(".nav-list").addClass("li-visible");
       iconOne.classList.add("rotate-1");
       // iconTwo.classList.add("second");
       iconThree.classList.add("rotate-2");
       $("body").css("overflow", "hidden");
       menuClicked = true;
+      // var script = $("script").each().attr("src");
+      console.log(script);
     } else {
       listItems.classList.remove("open");
       $(".nav-item").removeClass("li-visible");
@@ -27,6 +29,13 @@ $(document).ready(function () {
       menuClicked = false;
     }
   });
+
+  // Locomotive scroll error handler
+  function scrollHandler() {
+    if (this.src === "Js/locomotive.js") {
+      $(this).attr("src", "");
+    }
+  }
 
   $(document).mousemove(function (e) {
     // values: e.clientX, e.clientY, e.pageX, e.pageY
@@ -123,7 +132,7 @@ $(document).ready(function () {
 
   $("#web-select").each((e) => {
     $(".head-list").click(function (e) {
-      e.preventDefault();
+      // e.preventDefault();
       $(this).find(".select-list").toggleClass("revealed");
       var currentElement = $(this).find(".select-list");
       var currentIcon = $(this)
