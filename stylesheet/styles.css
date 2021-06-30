@@ -101,7 +101,7 @@
 }
 
 .finished {
-  max-height: 100vh;
+  max-height: 0vh;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
