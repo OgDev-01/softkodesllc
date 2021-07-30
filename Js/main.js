@@ -78,7 +78,8 @@ $(document).ready(function () {
   // Animate move Handler
   const link = document.querySelectorAll(".nav-item");
   // const cursor = document.querySelector(".cursor");
-
+  let aniImages = document.querySelectorAll(".section-wrap");
+  // console.log(aniImages);
   const animateit = function (e) {
     const span = this.querySelector(".refresh");
     const { offsetX: x, offsetY: y } = e,
@@ -88,6 +89,7 @@ $(document).ready(function () {
       yMove = (y / height) * (move * 2) - move;
 
     span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+    // span.style.transition = ".2s ease all";
 
     if (e.type === "mouseleave") span.style.transform = "";
   };
@@ -97,6 +99,23 @@ $(document).ready(function () {
 
   // var loaded = false;
 
+  // Animate image move
+  // const imageAnimation = function (e) {
+  //   const angle = this.querySelector(".img-move");
+  //   console.log(angle);
+  //   const { offsetX: x, offsetY: y } = e,
+  //     { offsetWidth: width, offsetHeight: height } = this,
+  //     move = 30,
+  //     xMove = (x / width) * (move * 2) - move,
+  //     yMove = (y / height) * (move * 2) - move;
+
+  //   angle.style.transform = `translate(${xMove}px, ${yMove}px)`;
+  //   angle.style.transition = "1.5s ease all";
+
+  //   if (e.type === "mouseleave") angle.style.transform = "";
+  // };
+  // aniImages.forEach((b) => b.addEventListener("mousemove", imageAnimation));
+  // aniImages.forEach((b) => b.addEventListener("mouseleave", imageAnimation));
   // Active class handler
   let path = window.location.href;
   $(".refresh").each(function () {

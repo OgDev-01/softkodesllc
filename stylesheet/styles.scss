@@ -30,6 +30,13 @@
 @import "./pages/privacy";
 @import "./pages/works";
 @import "./pages/terms";
+@import "./pages/anniversary";
+
+@font-face {
+  font-family: MonumentGrotesk;
+  src: url(../fonts/MonumentGrotesk-Regular.ttf);
+  font-weight: 600;
+}
 
 * {
   margin: 0;
