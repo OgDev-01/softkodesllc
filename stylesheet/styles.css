@@ -3318,7 +3318,7 @@ h1:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 50px;
+  padding: 5px 20px;
 }
 
 @media screen and (min-width: 44em) {
@@ -3401,19 +3401,20 @@ h1:after {
   height: auto;
 }
 
-.section-wrap .ani1 {
+.section-wrap .robo {
   width: 70px;
   height: 90px;
-  background: url(../../images/no-1.svg);
+  background: url(../../images/robor.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-transform: translate(40px, 50px);
+          transform: translate(40px, 50px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani1 {
+  .section-wrap .robo {
     width: 100px;
-    height: 180px;
-    background: url(../../images/no-1.svg);
+    height: 150px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     -webkit-transform: translate(50px, -100px);
@@ -3423,20 +3424,20 @@ h1:after {
   }
 }
 
-.section-wrap .ani2 {
-  width: 60px;
+.section-wrap .soft-ladies {
+  width: 75px;
   height: 60px;
-  background: url(../../images/no-2.svg);
+  background: url(../../images/soft-ladis.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(250px, 40px);
-          transform: translate(250px, 40px);
+  -webkit-transform: translate(150px, 30px);
+          transform: translate(150px, 30px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani2 {
+  .section-wrap .soft-ladies {
     width: 170px;
-    height: 140px;
+    height: 135px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     -webkit-transform: translate(550px, 20px);
@@ -3446,16 +3447,18 @@ h1:after {
   }
 }
 
-.section-wrap .ani3 {
-  width: 100px;
-  height: 70px;
-  background: url(../../images/no-4.svg);
+.section-wrap .chi-chi {
+  width: 60px;
+  height: 55px;
+  background: url(../../images/chi-chi.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-transform: translate(140px, 130px);
+          transform: translate(140px, 130px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani3 {
+  .section-wrap .chi-chi {
     width: 80px;
     height: 90px;
     background-size: 100% 100%;
@@ -3467,19 +3470,19 @@ h1:after {
   }
 }
 
-.section-wrap .ani4 {
-  width: 70px;
-  height: 60px;
-  background: url(../../images/no-10.svg);
+.section-wrap .fav {
+  width: 80px;
+  height: 50px;
+  background: url(../../images/favour.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(120px, 150px);
-          transform: translate(120px, 150px);
+  -webkit-transform: translate(240px, 100px);
+          transform: translate(240px, 100px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani4 {
-    width: 155px;
+  .section-wrap .fav {
+    width: 160px;
     height: 110px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -3490,10 +3493,10 @@ h1:after {
   }
 }
 
-.section-wrap .ani5 {
-  width: 60px;
+.section-wrap .sun {
+  width: 65px;
   height: 55px;
-  background: url(../../images/no-5.svg);
+  background: url(../../images/suny.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: translate(30px, 300px);
@@ -3501,7 +3504,7 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani5 {
+  .section-wrap .sun {
     width: 175px;
     height: 110px;
     background-size: 100% 100%;
@@ -3513,17 +3516,19 @@ h1:after {
   }
 }
 
-.section-wrap .ani6 {
+.section-wrap .robo-and-team {
   width: 60px;
-  height: 80px;
-  background: url(../../images/team.svg);
+  height: 50px;
+  background: url(../../images/robo-and-team.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-transform: translate(250px, 320px);
+          transform: translate(250px, 320px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani6 {
-    width: 110px;
+  .section-wrap .robo-and-team {
+    width: 150px;
     height: 110px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -3534,16 +3539,18 @@ h1:after {
   }
 }
 
-.section-wrap .ani7 {
+.section-wrap .tk {
   width: 50px;
-  height: 40px;
-  background: url(../../images/tk.svg);
+  height: 55px;
+  background: url(../../images/tk.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-transform: translate(230px, 400px);
+          transform: translate(230px, 400px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani7 {
+  .section-wrap .tk {
     width: 100px;
     height: 120px;
     background-size: 100% 100%;
@@ -3555,18 +3562,20 @@ h1:after {
   }
 }
 
-.section-wrap .ani8 {
+.section-wrap .smiling {
   width: 65px;
-  height: 85px;
-  background: url(../../images/no-7.svg);
+  height: 50px;
+  background: url(../../images/smiling-laddy.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-transform: translate(320px, 250px);
+          transform: translate(320px, 250px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani8 {
+  .section-wrap .smiling {
     width: 165px;
-    height: 140px;
+    height: 120px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     -webkit-transform: translate(320px, 380px);
@@ -3576,17 +3585,19 @@ h1:after {
   }
 }
 
-.section-wrap .ani9 {
+.section-wrap .innocent {
   width: 50px;
   height: 50px;
-  background: url(../../images/no-9.svg);
+  background: url(../../images/innocent.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  -webkit-transform: translate(-10px, 210px);
+          transform: translate(-10px, 210px);
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani9 {
-    width: 150px;
+  .section-wrap .innocent {
+    width: 135px;
     height: 90px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -3597,10 +3608,10 @@ h1:after {
   }
 }
 
-.section-wrap .ani10 {
+.section-wrap .jess {
   width: 60px;
   height: 60px;
-  background: url(../../images/no-6.svg);
+  background: url(../../images/jessica.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: translate(90px, 400px);
@@ -3608,9 +3619,9 @@ h1:after {
 }
 
 @media screen and (min-width: 44em) {
-  .section-wrap .ani10 {
+  .section-wrap .jess {
     width: 155px;
-    height: 180px;
+    height: 100px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     -webkit-transform: translate(90px, 270px);
@@ -3621,7 +3632,7 @@ h1:after {
 }
 
 .typewrite-wrap {
-  width: 70%;
+  width: 85%;
   height: 80px;
   position: absolute;
   top: 50%;
@@ -3639,13 +3650,44 @@ h1:after {
           align-items: center;
 }
 
+@media screen and (min-width: 44em) {
+  .typewrite-wrap {
+    width: 70%;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .typewrite-wrap p {
-  font-size: 52px;
+  font-size: 8vw;
   font-weight: bold;
   text-align: center;
   overflow: hidden;
-  padding: 5px;
   font-family: sans-serif;
+}
+
+@media screen and (min-width: 44em) {
+  .typewrite-wrap p {
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    padding: 5px;
+    font-family: sans-serif;
+  }
 }
 
 .typewrite-wrap p .autoTyped {
@@ -3662,14 +3704,28 @@ h1:after {
 
 #our-logo {
   display: block;
-  width: 35px;
-  height: 45px;
-  margin-left: 10px;
+  width: 30px;
+  height: 40px;
+  margin-left: 0;
   background: url(../../images/logo.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-top: 25px;
   z-index: 100;
+}
+
+@media screen and (min-width: 44em) {
+  #our-logo {
+    display: block;
+    width: 35px;
+    height: 45px;
+    margin-left: 10px;
+    background: url(../../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 25px;
+    z-index: 100;
+  }
 }
 
 .foot-head {
@@ -3685,7 +3741,7 @@ h1:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5px;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 44em) {
@@ -3739,11 +3795,11 @@ h1:after {
 }
 
 #intro {
-  width: 250px;
+  width: 270px;
   line-height: 20px;
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);
-  font-size: 2.5vw;
+  font-size: 2.7vw;
   letter-spacing: 0.1em;
 }
 
@@ -3755,6 +3811,16 @@ h1:after {
             transform: translate(0, -40px);
     font-size: 0.9rem;
     letter-spacing: 0.1em;
+  }
+}
+
+#pause {
+  display: none;
+}
+
+@media screen and (min-width: 44em) {
+  #pause {
+    display: block;
   }
 }
 

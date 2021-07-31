@@ -32,10 +32,10 @@
     <!-- AOS animation linking -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
+  <body style="overflow: hidden">
     <div class="cursor-custom"></div>
     <!-- <div class="cursor-custom"></div> -->
-    <div class="loading">
+    <div class="loading" style="display: none">
       <div class="loading-container">
         <p class="animate__animated wait"></p>
         <h1 class="experience animate__animated">
@@ -56,30 +56,30 @@
         >
       </div>
       <div class="section-wrap">
-        <div class="img-ani ani1 img-move">
+        <div class="img-ani robo img-move">
           <!-- <img class="refresh" src="/images/no-1.svg" alt="" /> -->
         </div>
-        <div class="img-ani ani2 img-move-2">
+        <div class="img-ani soft-ladies img-move">
           <!-- <img class="refresh" src="/images/no-2.svg" alt="" /> -->
         </div>
-        <div class="img-ani ani3 img-move">
+        <div class="img-ani chi-chi img-move">
           <!-- <img class="refresh" src="/images/no-4.svg" alt="" /> -->
         </div>
-        <div class="img-ani ani4 img-move">
+        <div class="img-ani fav img-move">
           <!-- <img class="refresh" src="/images/no-10.svg" alt="" /> -->
         </div>
-        <div class="img-ani ani5 img-move">
+        <div class="img-ani sun img-move">
           <!-- <img class="refresh" src="/images/no-5.svg" alt="" /> -->
         </div>
-        <div class="img-ani ani6 img-move">
+        <div class="img-ani robo-and-team img-move">
           <!-- <img class="refresh" src="/images/team.svg" alt="" /> -->
         </div>
-        <div class="img-ani ani7 img-move">
+        <div class="img-ani tk img-move">
           <!-- <img class="refresh" src="/images/tk.svg" alt="" /> -->
         </div>
-        <div class="img-ani ani8 img-move"></div>
-        <div class="img-ani ani9 img-move"></div>
-        <div class="img-ani ani10 img-move"></div>
+        <div class="img-ani smiling img-move"></div>
+        <div class="img-ani innocent img-move"></div>
+        <div class="img-ani jess img-move"></div>
       </div>
       <div class="typewrite-wrap">
         <p>
@@ -99,7 +99,7 @@
           target="_blank"
           >Add to calendar</a
         >
-        <a href="#" onclick="confetti.pause()">Pause Confetti</a>
+        <a href="#" id="pause" onclick="confetti.pause()">Pause Confetti</a>
       </div>
     </div>
 
