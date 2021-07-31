@@ -3367,10 +3367,19 @@ h1:after {
 }
 
 #date {
-  font-size: 15px;
+  font-size: 3vw;
   position: absolute;
-  -webkit-transform: translate(512px, 540px);
-          transform: translate(512px, 540px);
+  -webkit-transform: translate(70%, 10px);
+          transform: translate(70%, 10px);
+}
+
+@media screen and (min-width: 44em) {
+  #date {
+    position: absolute;
+    -webkit-transform: translate(510px, 530px);
+            transform: translate(510px, 530px);
+    font-size: 15px;
+  }
 }
 
 .section-wrap {
@@ -3545,8 +3554,8 @@ h1:after {
   background: url(../../images/tk.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(230px, 400px);
-          transform: translate(230px, 400px);
+  -webkit-transform: translate(270px, 430px);
+          transform: translate(270px, 430px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3614,8 +3623,8 @@ h1:after {
   background: url(../../images/jessica.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(90px, 400px);
-          transform: translate(90px, 400px);
+  -webkit-transform: translate(50px, 410px);
+          transform: translate(50px, 410px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3777,11 +3786,11 @@ h1:after {
 
 #calender {
   position: absolute;
-  -webkit-transform: translate(550px, -135px);
-          transform: translate(550px, -135px);
+  -webkit-transform: translate(130%, -400%);
+          transform: translate(130%, -400%);
   background: black;
   color: white;
-  width: 180px;
+  width: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3791,7 +3800,31 @@ h1:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
+  height: 35px;
+  font-size: 2vw;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (min-width: 44em) {
+  #calender {
+    position: absolute;
+    -webkit-transform: translate(550px, -135px);
+            transform: translate(550px, -135px);
+    background: black;
+    color: white;
+    width: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    font-size: 15px;
+  }
 }
 
 #intro {
