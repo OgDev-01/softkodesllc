@@ -413,7 +413,7 @@
   height: 35px;
   font-size: 2vw;
   letter-spacing: 0.1em;
-  margin: 0 30% 180px 30%;
+  margin: 0 30% 210px 30%;
 
   @media screen and(min-width: 44em) {
     position: absolute;
@@ -426,6 +426,7 @@
     align-items: center;
     height: 50px;
     font-size: 15px;
+    margin: 0;
   }
 }
 
