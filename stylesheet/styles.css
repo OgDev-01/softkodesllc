@@ -3787,6 +3787,8 @@ h1:after {
         -ms-flex-align: center;
             align-items: center;
     padding: 0 50px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
