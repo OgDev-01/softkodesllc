@@ -4,6 +4,7 @@
   background-color: $bg-pry;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .anni-head {
   width: 100%;
@@ -67,7 +68,7 @@
   // background-color: red;
   display: grid;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 
   @media screen and(min-width: 44em) {
     width: 100%;
@@ -399,14 +400,14 @@
   }
 }
 #calender {
-  position: absolute;
+  // position: absolute;
   // bottom: 120px;
   // left: 130px;
   // transform: translate(130%, -400%);
   background: black;
   color: hsl(0, 0%, 100%);
   width: 110px;
-  height: 40px;
+  // height: 50px;
   padding: 10px 5px;
   display: flex;
   justify-content: center;
@@ -414,7 +415,12 @@
   height: 35px;
   font-size: 2vw;
   letter-spacing: 0.1em;
-  margin: 0 30% 210px 30%;
+  // z-index: 9;
+  text-decoration: none;
+  font-family: MonumentGrotesk;
+  // font-size: 12px;
+  text-transform: uppercase;
+  margin: 0px auto 30px auto;
 
   @media screen and(min-width: 44em) {
     position: absolute;

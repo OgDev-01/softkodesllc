@@ -3304,6 +3304,7 @@ h1:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .anni-head {
@@ -3388,7 +3389,7 @@ h1:after {
   display: -ms-grid;
   display: grid;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 @media screen and (min-width: 44em) {
@@ -3785,11 +3786,9 @@ h1:after {
 }
 
 #calender {
-  position: absolute;
   background: black;
   color: white;
   width: 110px;
-  height: 40px;
   padding: 10px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3803,7 +3802,10 @@ h1:after {
   height: 35px;
   font-size: 2vw;
   letter-spacing: 0.1em;
-  margin: 0 30% 210px 30%;
+  text-decoration: none;
+  font-family: MonumentGrotesk;
+  text-transform: uppercase;
+  margin: 0px auto 30px auto;
 }
 
 @media screen and (min-width: 44em) {
