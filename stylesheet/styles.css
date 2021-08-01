@@ -3456,8 +3456,8 @@ h1:after {
   background: url(../../images/soft-ladis.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(150px, 30px);
-          transform: translate(150px, 30px);
+  -webkit-transform: translate(180px, 30px);
+          transform: translate(180px, 30px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3475,12 +3475,12 @@ h1:after {
 
 .section-wrap .chi-chi {
   width: 60px;
-  height: 55px;
+  height: 65px;
   background: url(../../images/chi-chi.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(140px, 130px);
-          transform: translate(140px, 130px);
+  -webkit-transform: translate(160px, 200px);
+          transform: translate(160px, 200px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3502,8 +3502,8 @@ h1:after {
   background: url(../../images/favour.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(240px, 100px);
-          transform: translate(240px, 100px);
+  -webkit-transform: translate(300px, 100px);
+          transform: translate(300px, 100px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3520,13 +3520,13 @@ h1:after {
 }
 
 .section-wrap .sun {
-  width: 65px;
+  width: 75px;
   height: 55px;
   background: url(../../images/suny.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(30px, 300px);
-          transform: translate(30px, 300px);
+  -webkit-transform: translate(60px, 360px);
+          transform: translate(60px, 360px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3548,8 +3548,8 @@ h1:after {
   background: url(../../images/robo-and-team.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(250px, 320px);
-          transform: translate(250px, 320px);
+  -webkit-transform: translate(200px, 390px);
+          transform: translate(200px, 390px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3571,8 +3571,8 @@ h1:after {
   background: url(../../images/tk.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(270px, 430px);
-          transform: translate(270px, 430px);
+  -webkit-transform: translate(320px, 500px);
+          transform: translate(320px, 500px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3612,13 +3612,13 @@ h1:after {
 }
 
 .section-wrap .innocent {
-  width: 50px;
+  width: 70px;
   height: 50px;
   background: url(../../images/innocent.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(-10px, 210px);
-          transform: translate(-10px, 210px);
+  -webkit-transform: translate(20px, 210px);
+          transform: translate(20px, 210px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3640,8 +3640,8 @@ h1:after {
   background: url(../../images/jessica.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(50px, 410px);
-          transform: translate(50px, 410px);
+  -webkit-transform: translate(20px, 470px);
+          transform: translate(20px, 470px);
 }
 
 @media screen and (min-width: 44em) {
