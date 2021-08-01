@@ -3810,9 +3810,6 @@ h1:after {
 
 @media screen and (min-width: 44em) {
   #calender {
-    position: absolute;
-    -webkit-transform: translate(550px, -135px);
-            transform: translate(550px, -135px);
     background: black;
     color: white;
     width: 180px;
@@ -3827,7 +3824,9 @@ h1:after {
             align-items: center;
     height: 50px;
     font-size: 15px;
-    margin: 0;
+    z-index: 9;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
   }
 }
 
