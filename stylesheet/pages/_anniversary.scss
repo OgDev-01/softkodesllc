@@ -1,10 +1,19 @@
 .container-anniversary {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: $bg-pry;
+  // background-color: gray;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  @media screen and (min-width: 44em) {
+    width: 100%;
+    height: 100vh;
+    background-color: $bg-pry;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 }
 .anni-head {
   width: 100%;
@@ -64,11 +73,12 @@
 
 .section-wrap {
   width: 100%;
-  height: 85vh;
+  height: 80vh;
   // background-color: red;
   display: grid;
   position: relative;
   overflow: visible;
+  // margin-top: 100px;
 
   @media screen and(min-width: 44em) {
     width: 100%;
@@ -376,6 +386,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
+  transform: translateY(-120px);
 
   @media screen and (min-width: 44em) {
     width: 100%;
@@ -406,8 +417,8 @@
   // transform: translate(130%, -400%);
   background: black;
   color: hsl(0, 0%, 100%);
-  width: 110px;
-  padding: 10px 5px;
+  width: 160px;
+  padding: 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,7 +430,7 @@
   font-family: MonumentGrotesk;
   // font-size: 12px;
   text-transform: uppercase;
-  margin: 0px auto 30px auto;
+  margin: 0px auto 180px auto;
 
   @media screen and(min-width: 44em) {
     // position: absolute;
@@ -433,6 +444,7 @@
     font-size: 15px;
     z-index: 9;
     transform: translateY(-40px);
+    margin-bottom: 30px;
   }
 }
 
@@ -446,10 +458,10 @@
   }
 }
 #intro {
-  width: 270px;
+  width: 290px;
   line-height: 20px;
   transform: translate(0, -10px);
-  font-size: 2.7vw;
+  font-size: 2.8vw;
   letter-spacing: 0.1em;
 
   @media screen and (min-width: 44em) {

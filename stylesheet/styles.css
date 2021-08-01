@@ -3295,7 +3295,7 @@ h1:after {
 
 .container-anniversary {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #f8fdff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3305,6 +3305,22 @@ h1:after {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+}
+
+@media screen and (min-width: 44em) {
+  .container-anniversary {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8fdff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
 }
 
 .anni-head {
@@ -3385,7 +3401,7 @@ h1:after {
 
 .section-wrap {
   width: 100%;
-  height: 85vh;
+  height: 80vh;
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -3752,6 +3768,8 @@ h1:after {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 15px;
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3788,8 +3806,8 @@ h1:after {
 #calender {
   background: black;
   color: white;
-  width: 110px;
-  padding: 10px 5px;
+  width: 160px;
+  padding: 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3805,7 +3823,7 @@ h1:after {
   text-decoration: none;
   font-family: MonumentGrotesk;
   text-transform: uppercase;
-  margin: 0px auto 30px auto;
+  margin: 0px auto 180px auto;
 }
 
 @media screen and (min-width: 44em) {
@@ -3827,6 +3845,7 @@ h1:after {
     z-index: 9;
     -webkit-transform: translateY(-40px);
             transform: translateY(-40px);
+    margin-bottom: 30px;
   }
 }
 
@@ -3843,11 +3862,11 @@ h1:after {
 }
 
 #intro {
-  width: 270px;
+  width: 290px;
   line-height: 20px;
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);
-  font-size: 2.7vw;
+  font-size: 2.8vw;
   letter-spacing: 0.1em;
 }
 
