@@ -3786,11 +3786,10 @@ h1:after {
 
 #calender {
   position: absolute;
-  -webkit-transform: translate(130%, -400%);
-          transform: translate(130%, -400%);
   background: black;
   color: white;
-  width: 90px;
+  width: 120px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3803,6 +3802,7 @@ h1:after {
   height: 35px;
   font-size: 2vw;
   letter-spacing: 0.1em;
+  margin: 0 30% 180px 30%;
 }
 
 @media screen and (min-width: 44em) {
@@ -3824,6 +3824,18 @@ h1:after {
             align-items: center;
     height: 50px;
     font-size: 15px;
+  }
+}
+
+#loadin {
+  font-size: 30px;
+  line-height: 43px;
+}
+
+@media screen and (min-width: 44em) {
+  #loadin {
+    font-size: 90px;
+    line-height: 100px;
   }
 }
 

@@ -402,16 +402,18 @@
   position: absolute;
   // bottom: 120px;
   // left: 130px;
-  transform: translate(130%, -400%);
+  // transform: translate(130%, -400%);
   background: black;
   color: hsl(0, 0%, 100%);
-  width: 90px;
+  width: 120px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 35px;
   font-size: 2vw;
   letter-spacing: 0.1em;
+  margin: 0 30% 180px 30%;
 
   @media screen and(min-width: 44em) {
     position: absolute;
@@ -424,6 +426,16 @@
     align-items: center;
     height: 50px;
     font-size: 15px;
+  }
+}
+
+#loadin {
+  font-size: 30px;
+  line-height: 43px;
+
+  @media screen and (min-width: 44em) {
+    font-size: 90px;
+    line-height: 100px;
   }
 }
 #intro {
