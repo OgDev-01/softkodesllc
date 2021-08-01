@@ -37,7 +37,7 @@
   }
   a {
     display: block;
-    width: max-content;
+    // width: max-content;
     text-decoration: none;
     font-family: MonumentGrotesk;
     font-size: 10px;
@@ -60,9 +60,10 @@
   }
 }
 #date {
-  font-size: 3vw;
-  position: absolute;
-  transform: translate(70%, 10px);
+  font-size: 3.2vw;
+  // position: absolute;
+  // transform: translate(70%, 10px);
+  margin-top: 25px;
 
   @media screen and (min-width: 44em) {
     position: absolute;
@@ -90,11 +91,6 @@
 
   .img-ani {
     position: absolute;
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
   }
 
   .robo {
@@ -119,12 +115,12 @@
     }
   }
   .soft-ladies {
-    width: 75px;
+    width: 80px;
     height: 60px;
     background: url(../../images/soft-ladis.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(180px, 30px);
+    transform: scale(1.2) translate(170px, 30px);
 
     @media screen and (min-width: 44em) {
       width: 170px;
@@ -143,7 +139,7 @@
     background: url(../../images/chi-chi.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(160px, 200px);
+    transform: scale(1.2) translate(160px, 160px);
     @media screen and(min-width:44em) {
       width: 80px;
       height: 90px;
@@ -161,7 +157,7 @@
     background: url(../../images/favour.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(300px, 100px);
+    transform: scale(1.2) translate(270px, 130px);
 
     @media screen and(min-width: 44em) {
       width: 160px;
@@ -180,7 +176,7 @@
     background: url(../../images/suny.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(60px, 360px);
+    transform: scale(1.2) translate(40px, 330px);
     @media screen and(min-width: 44em) {
       width: 175px;
       height: 110px;
@@ -200,7 +196,7 @@
     background: url(../../images/robo-and-team.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(200px, 390px);
+    transform: scale(1.2) translate(250px, 370px);
     @media screen and(min-width: 44em) {
       width: 150px;
       height: 110px;
@@ -221,7 +217,7 @@
     background: url(../../images/tk.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(320px, 500px);
+    transform: scale(1.2) translate(260px, 500px);
 
     @media screen and(min-width: 44em) {
       width: 100px;
@@ -242,7 +238,7 @@
     background: url(../../images/smiling-laddy.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(320px, 250px);
+    transform: scale(1.2) translate(290px, 250px);
     @media screen and(min-width: 44em) {
       width: 165px;
       height: 120px;
@@ -260,7 +256,7 @@
     background: url(../../images/innocent.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(20px, 210px);
+    transform: scale(1.2) translate(20px, 210px);
     @media screen and(min-width: 44em) {
       width: 135px;
       height: 90px;
@@ -272,13 +268,13 @@
     }
   }
   .jess {
-    width: 60px;
+    width: 80px;
     height: 60px;
     // border-radius: 50%;
     background: url(../../images/jessica.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(20px, 470px);
+    transform: translate(10px, 500px);
     @media screen and(min-width: 44em) {
       width: 155px;
       height: 100px;
@@ -415,18 +411,13 @@
   // transform: translate(130%, -400%);
   background: black;
   color: hsl(0, 0%, 100%);
-  // width: 160px;
   padding: 10px 25px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // height: 35px;
+  display: block;
   font-size: 2.6vw;
   letter-spacing: 0.1em;
   // z-index: 9;
   text-decoration: none;
   font-family: MonumentGrotesk;
-  // font-size: 12px;
   text-transform: uppercase;
   margin: 0px auto 180px auto;
 

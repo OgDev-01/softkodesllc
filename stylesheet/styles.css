@@ -3357,9 +3357,6 @@ h1:after {
 
 .anni-head a {
   display: block;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   text-decoration: none;
   font-family: MonumentGrotesk;
   font-size: 10px;
@@ -3384,10 +3381,8 @@ h1:after {
 }
 
 #date {
-  font-size: 3vw;
-  position: absolute;
-  -webkit-transform: translate(70%, 10px);
-          transform: translate(70%, 10px);
+  font-size: 3.2vw;
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 44em) {
@@ -3422,11 +3417,6 @@ h1:after {
   position: absolute;
 }
 
-.section-wrap .img-ani img {
-  max-width: 100%;
-  height: auto;
-}
-
 .section-wrap .robo {
   width: 70px;
   height: 90px;
@@ -3451,13 +3441,13 @@ h1:after {
 }
 
 .section-wrap .soft-ladies {
-  width: 75px;
+  width: 80px;
   height: 60px;
   background: url(../../images/soft-ladis.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(180px, 30px);
-          transform: translate(180px, 30px);
+  -webkit-transform: scale(1.2) translate(170px, 30px);
+          transform: scale(1.2) translate(170px, 30px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3479,8 +3469,8 @@ h1:after {
   background: url(../../images/chi-chi.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(160px, 200px);
-          transform: translate(160px, 200px);
+  -webkit-transform: scale(1.2) translate(160px, 160px);
+          transform: scale(1.2) translate(160px, 160px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3502,8 +3492,8 @@ h1:after {
   background: url(../../images/favour.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(300px, 100px);
-          transform: translate(300px, 100px);
+  -webkit-transform: scale(1.2) translate(270px, 130px);
+          transform: scale(1.2) translate(270px, 130px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3525,8 +3515,8 @@ h1:after {
   background: url(../../images/suny.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(60px, 360px);
-          transform: translate(60px, 360px);
+  -webkit-transform: scale(1.2) translate(40px, 330px);
+          transform: scale(1.2) translate(40px, 330px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3548,8 +3538,8 @@ h1:after {
   background: url(../../images/robo-and-team.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(200px, 390px);
-          transform: translate(200px, 390px);
+  -webkit-transform: scale(1.2) translate(250px, 370px);
+          transform: scale(1.2) translate(250px, 370px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3571,8 +3561,8 @@ h1:after {
   background: url(../../images/tk.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(320px, 500px);
-          transform: translate(320px, 500px);
+  -webkit-transform: scale(1.2) translate(260px, 500px);
+          transform: scale(1.2) translate(260px, 500px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3594,8 +3584,8 @@ h1:after {
   background: url(../../images/smiling-laddy.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(320px, 250px);
-          transform: translate(320px, 250px);
+  -webkit-transform: scale(1.2) translate(290px, 250px);
+          transform: scale(1.2) translate(290px, 250px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3617,8 +3607,8 @@ h1:after {
   background: url(../../images/innocent.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(20px, 210px);
-          transform: translate(20px, 210px);
+  -webkit-transform: scale(1.2) translate(20px, 210px);
+          transform: scale(1.2) translate(20px, 210px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3635,13 +3625,13 @@ h1:after {
 }
 
 .section-wrap .jess {
-  width: 60px;
+  width: 80px;
   height: 60px;
   background: url(../../images/jessica.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(20px, 470px);
-          transform: translate(20px, 470px);
+  -webkit-transform: translate(10px, 500px);
+          transform: translate(10px, 500px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3806,6 +3796,7 @@ h1:after {
   background: black;
   color: white;
   padding: 10px 25px;
+  display: block;
   font-size: 2.6vw;
   letter-spacing: 0.1em;
   text-decoration: none;
