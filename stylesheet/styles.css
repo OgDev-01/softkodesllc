@@ -3446,8 +3446,8 @@ h1:after {
   background: url(../../images/soft-ladies.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(170px, 30px);
-          transform: scale(1.2) translate(170px, 30px);
+  -webkit-transform: scale(1.2) translate(170px, 15px);
+          transform: scale(1.2) translate(170px, 15px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3492,8 +3492,8 @@ h1:after {
   background: url(../../images/favour.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(270px, 130px);
-          transform: scale(1.2) translate(270px, 130px);
+  -webkit-transform: scale(1.2) translate(270px, 160px);
+          transform: scale(1.2) translate(270px, 160px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3515,8 +3515,8 @@ h1:after {
   background: url(../../images/sunny.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(140px, 120px);
-          transform: scale(1.2) translate(140px, 120px);
+  -webkit-transform: scale(1.2) translate(260px, 450px);
+          transform: scale(1.2) translate(260px, 450px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3538,8 +3538,8 @@ h1:after {
   background: url(../../images/tk.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(260px, 450px);
-          transform: scale(1.2) translate(260px, 450px);
+  -webkit-transform: scale(1.2) translate(140px, 120px);
+          transform: scale(1.2) translate(140px, 120px);
 }
 
 @media screen and (min-width: 44em) {
