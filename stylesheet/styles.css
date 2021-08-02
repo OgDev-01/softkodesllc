@@ -3772,7 +3772,7 @@ h1:after {
 #calender {
   background: black;
   color: white;
-  padding: 5px 0 10px 0;
+  padding: 2px 0 10px 0;
   font-size: 2.6vw;
   letter-spacing: 0.1em;
   z-index: 9;
@@ -3811,6 +3811,7 @@ h1:after {
     -webkit-transform: translateY(-40px);
             transform: translateY(-40px);
     margin-bottom: 30px;
+    padding: 10px 0;
   }
 }
 
