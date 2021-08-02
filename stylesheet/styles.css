@@ -3423,8 +3423,8 @@ h1:after {
   background: url(../../images/robo.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: translate(40px, 50px);
-          transform: translate(40px, 50px);
+  -webkit-transform: translate(20px, 120px);
+          transform: translate(20px, 120px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3469,8 +3469,8 @@ h1:after {
   background: url(../../images/chi-chi.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(160px, 120px);
-          transform: scale(1.2) translate(160px, 120px);
+  -webkit-transform: scale(1.2) translate(5px, 330px);
+          transform: scale(1.2) translate(5px, 330px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3515,8 +3515,8 @@ h1:after {
   background: url(../../images/sunny.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(5px, 330px);
-          transform: scale(1.2) translate(5px, 330px);
+  -webkit-transform: scale(1.2) translate(140px, 120px);
+          transform: scale(1.2) translate(140px, 120px);
 }
 
 @media screen and (min-width: 44em) {

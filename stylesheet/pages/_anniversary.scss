@@ -99,7 +99,7 @@
     background: url(../../images/robo.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(40px, 50px);
+    transform: translate(20px, 120px);
 
     @media screen and(min-width: 44em) {
       width: 100px;
@@ -139,7 +139,8 @@
     background: url(../../images/chi-chi.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: scale(1.2) translate(160px, 120px);
+    transform: scale(1.2) translate(5px, 330px);
+
     @media screen and(min-width:44em) {
       width: 80px;
       height: 90px;
@@ -176,7 +177,8 @@
     background: url(../../images/sunny.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: scale(1.2) translate(5px, 330px);
+    transform: scale(1.2) translate(140px, 120px);
+
     @media screen and(min-width: 44em) {
       width: 175px;
       height: 110px;
