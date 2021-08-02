@@ -3515,8 +3515,8 @@ h1:after {
   background: url(../../images/sunny.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(40px, 360px);
-          transform: scale(1.2) translate(40px, 360px);
+  -webkit-transform: scale(1.2) translate(5px, 330px);
+          transform: scale(1.2) translate(5px, 330px);
 }
 
 @media screen and (min-width: 44em) {
@@ -3581,7 +3581,6 @@ h1:after {
 .section-wrap .innocent {
   width: 70px;
   height: 65px;
-  background: url(../../images/innocent.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(-10px, 190px);
@@ -3592,6 +3591,7 @@ h1:after {
   .section-wrap .innocent {
     width: 135px;
     height: 90px;
+    background: url(../../images/innocent.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     -webkit-transform: translate(970px, 10px);
