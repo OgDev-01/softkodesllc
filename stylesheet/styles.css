@@ -3420,7 +3420,7 @@ h1:after {
 .section-wrap .robo {
   width: 70px;
   height: 90px;
-  background: url(../../images/robor.png);
+  background: url(../../images/robo.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: translate(40px, 50px);
@@ -3443,7 +3443,7 @@ h1:after {
 .section-wrap .soft-ladies {
   width: 80px;
   height: 60px;
-  background: url(../../images/soft-ladis.png);
+  background: url(../../images/soft-ladies.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(170px, 30px);
@@ -3466,7 +3466,7 @@ h1:after {
 .section-wrap .chi-chi {
   width: 60px;
   height: 65px;
-  background: url(../../images/chi-chi.png);
+  background: url(../../images/chi-chi.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(160px, 160px);
@@ -3489,7 +3489,7 @@ h1:after {
 .section-wrap .fav {
   width: 80px;
   height: 50px;
-  background: url(../../images/favour.png);
+  background: url(../../images/favour.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(270px, 130px);
@@ -3512,7 +3512,7 @@ h1:after {
 .section-wrap .sun {
   width: 75px;
   height: 55px;
-  background: url(../../images/suny.png);
+  background: url(../../images/sunny.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(40px, 330px);
@@ -3532,33 +3532,10 @@ h1:after {
   }
 }
 
-.section-wrap .robo-and-team {
-  width: 60px;
-  height: 50px;
-  background: url(../../images/robo-and-team.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  -webkit-transform: scale(1.2) translate(250px, 370px);
-          transform: scale(1.2) translate(250px, 370px);
-}
-
-@media screen and (min-width: 44em) {
-  .section-wrap .robo-and-team {
-    width: 150px;
-    height: 110px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    -webkit-transform: translate(800px, 130px);
-            transform: translate(800px, 130px);
-    -webkit-animation: slide-tr 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-    animation: slide-tr 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  }
-}
-
 .section-wrap .tk {
   width: 50px;
   height: 55px;
-  background: url(../../images/tk.png);
+  background: url(../../images/tk.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(260px, 500px);
@@ -3581,7 +3558,7 @@ h1:after {
 .section-wrap .smiling {
   width: 65px;
   height: 50px;
-  background: url(../../images/smiling-laddy.png);
+  background: url(../../images/smiling.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(290px, 250px);
@@ -3604,7 +3581,7 @@ h1:after {
 .section-wrap .innocent {
   width: 70px;
   height: 50px;
-  background: url(../../images/innocent.png);
+  background: url(../../images/innocent.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: scale(1.2) translate(20px, 210px);
@@ -3627,7 +3604,7 @@ h1:after {
 .section-wrap .jess {
   width: 80px;
   height: 60px;
-  background: url(../../images/jessica.png);
+  background: url(../../images/jess.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transform: translate(10px, 500px);
@@ -3803,13 +3780,14 @@ h1:after {
   font-family: MonumentGrotesk;
   text-transform: uppercase;
   margin: 0px auto 180px auto;
+  width: 180px;
 }
 
 @media screen and (min-width: 44em) {
   #calender {
     background: black;
     color: white;
-    width: 180px;
+    width: 220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
