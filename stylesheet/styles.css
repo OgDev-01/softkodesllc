@@ -1752,7 +1752,8 @@ figure {
   line-height: 100px;
   letter-spacing: -0.03em;
   color: #f8fdff;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+ 1px 1px 0 #000;
   text-decoration: none;
 }
 
@@ -4311,7 +4312,7 @@ h1:after {
   width: 100vw;
   height: 50vh;
   margin-top: 100px;
-  background: url(/images/about-img.png);
+  background: url(/images/pexels-christina-morillo-1181243.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -4321,7 +4322,7 @@ h1:after {
     width: 100vw;
     height: 90vh;
     margin-top: 100px;
-    background: url(/images/about-img.png);
+    background: url(/images/pexels-christina-morillo-1181243.jpg;)
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
