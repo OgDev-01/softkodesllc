@@ -4316,7 +4316,7 @@ h1:after {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.abt-section .img-wrap2 {
+.img-wrap2 {
   width: 100vw;
   height: 50vh;
   margin-top: 100px;
@@ -4325,7 +4325,7 @@ h1:after {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 44em) {
-  .abt-section .img-wrap2 {
+ .img-wrap2 {
     width: 100vw;
     height: 90vh;
     margin-top: 100px;
