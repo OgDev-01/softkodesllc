@@ -131,13 +131,21 @@
 .section-three {
   width: 100%;
   height: 900px;
+<<<<<<< HEAD
+=======
+  // background: yellow;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
   overflow-x: hidden;
   overflow-y: hidden;
   padding-left: 25px;
 
   @media screen and (min-width: 44em) {
     padding: 50px 10px 100px 300px;
+<<<<<<< HEAD
     margin-bottom: 0px;
+=======
+    margin-bottom: 300px;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
   }
 }
 
@@ -148,7 +156,10 @@
   padding: 0px 0px 200px 0px;
 
   @media screen and(min-width: 44em) {
+<<<<<<< HEAD
     padding: 0 0 0px 0;
+=======
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
   }
 }
 
@@ -224,18 +235,30 @@
     }
   }
   .img-wrap {
+<<<<<<< HEAD
     // width: 100vw;
     // height: 50vh;
     margin-top: 100px;
+=======
+    width: 100vw;
+    height: 50vh;
+    margin-top: 100px;
+    // background-color: red;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
     background: url(/images/about-img.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
     @media screen and (min-width: 44em) {
       width: 100vw;
+<<<<<<< HEAD
       height: 811px;
       max-width: 1440px;
       // margin-top: 100px;
+=======
+      height: 90vh;
+      margin-top: 100px;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
       // background-color: red;
       background: url(/images/about-img.png);
       background-size: 100% 100%;
@@ -344,7 +367,11 @@
   @media screen and (min-width: 44em) {
     width: 100%;
     padding: 20px 200px 20px 200px;
+<<<<<<< HEAD
     margin-top: 30px;
+=======
+    margin-top: 200px;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
   }
 
   #head {

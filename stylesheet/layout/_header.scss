@@ -116,9 +116,15 @@
 
   .nav-list {
     display: flex;
+<<<<<<< HEAD
     // flex-direction: column;
     text-align: center;
     justify-content: space-between;
+=======
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
     align-items: center;
     background: red;
     height: 100vh;
@@ -126,7 +132,14 @@
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     overflow: hidden;
+=======
+    // position: relative;
+    // max-height: 0;
+    overflow: hidden;
+    // display: none;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
     opacity: 0;
     visibility: hidden;
     max-height: 0;
@@ -136,6 +149,10 @@
 
     @media screen and (min-width: 44em) {
       display: flex;
+<<<<<<< HEAD
+=======
+      // height: auto;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
       background-color: #ececec8f;
       width: 100%;
       align-items: center;
@@ -158,6 +175,7 @@
       height: 100%;
       margin-left: auto;
       display: flex;
+<<<<<<< HEAD
       // flex-direction: column;
       justify-content: space-between;
       align-items: center;
@@ -201,6 +219,15 @@
             height: 200px;
           }
         }
+=======
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // transform: translateX(500px);
+
+      @media screen and(min-width: 44em) {
+        width: 100%;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
       }
     }
     li {
@@ -212,7 +239,11 @@
       @media screen and (min-width: 44em) {
         // width: calc(100% / 5);
         // transform: none;
+<<<<<<< HEAD
         width: 100%;
+=======
+        width: 30%;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
         margin: 0 auto;
         // padding: 10px 0;
       }
@@ -225,13 +256,21 @@
         display: block;
         cursor: pointer;
         width: 100%;
+<<<<<<< HEAD
         text-align: left;
+=======
+        text-align: center;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
         // background-color: red;
 
         font-family: "DM Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
+<<<<<<< HEAD
         font-size: 30px;
+=======
+        font-size: 22px;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
         line-height: 29px;
         /* identical to box height */
 
@@ -246,7 +285,11 @@
 
         @media screen and(min-width: 44em) {
           font-size: 50px;
+<<<<<<< HEAD
           text-align: left;
+=======
+          text-align: center;
+>>>>>>> 4f57e2d0882902470549fd6e7c2e663c537c04f0
           padding: 18px 0;
         }
       }
