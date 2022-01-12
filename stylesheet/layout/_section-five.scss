@@ -1,0 +1,130 @@
+.training {
+  width: 100%;
+
+  #head {
+    @include subhead;
+    width: 100%;
+    line-height: 120% !important;
+    margin: {
+      // left: auto;
+      right: auto;
+      //   bottom: 100px;
+    }
+    // font-size: 60px !important;
+    padding: 0 15px;
+
+    @media screen and (min-width: 44em) {
+      // width: 70%;
+      line-height: 120% !important;
+      // background-color: red;
+      // text-align: center;
+      padding: {
+        left: 300px;
+        right: 100px;
+      }
+      margin: {
+        left: auto;
+        right: auto;
+        //   bottom: 100px;
+      }
+    }
+  }
+
+  .skill-wrap {
+    width: 400%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+
+    @media screen and (min-width: 44em) {
+      width: 220%;
+    }
+
+    &:nth-child(2) {
+      margin-top: 180px;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 100px;
+        letter-spacing: -0.03em;
+        color: $bg-pry;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+          1px 1px 0 #000;
+        text-decoration: none;
+        // word-wrap: normal;
+        // padding: 50px;
+
+        @media screen and (min-width: 44em) {
+          font-size: 110px;
+          line-height: 142px;
+          font-weight: normal;
+        }
+
+        &:hover {
+          text-shadow: none;
+          transition: all 0.5s ease-in-out;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .meet-btn {
+    width: 150px;
+    height: 150px;
+
+    padding: 20px;
+    text-align: center !important;
+
+    @media screen and (min-width: 44em) {
+      margin-top: 100px;
+    }
+  }
+}
+
+.s-one {
+  animation: infinite-slide 15s linear infinite alternate;
+}
+.s-two {
+  transform: translateX(-500px);
+  animation: infinite-slide-right 15s linear infinite alternate;
+}
+.s-three {
+  transform: translateX(-200px);
+  animation: infinite-slide-last 15s linear infinite alternate;
+}
+
+@keyframes infinite-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-500px);
+  }
+}
+
+@keyframes infinite-slide-right {
+  from {
+    transform: translateX(-500);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes infinite-slide-last {
+  from {
+    transform: translateX(100);
+  }
+  to {
+    transform: translateX(-600px);
+  }
+}

@@ -1,0 +1,70 @@
+.privacy-policy-wrap {
+  width: 100%;
+  height: auto;
+  padding: 30px 30px;
+  @media screen and(min-width: 44em) {
+    padding: 50px 250px;
+  }
+
+  .privacy-head {
+    width: 100%;
+
+    h1 {
+      width: 100%;
+      padding-left: 0;
+      // background-color: red;
+      font-size: 8vw;
+      font-family: "DM SANS";
+      text-align: center;
+
+      @media screen and(min-width: 44em) {
+        width: 100%;
+        padding-left: 0;
+        // background-color: red;
+        font-size: 8vw;
+        font-family: "DM SANS";
+        text-align: left;
+      }
+    }
+  }
+
+  .p-statement {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+    @media screen and(min-width: 44em) {
+      width: 100%;
+      height: auto;
+      margin-top: 60px;
+    }
+
+    h2 {
+      font-family: "DM SANS";
+      font-size: 5vw;
+      //   line-height: 100px;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 30px;
+      font-family: "DM SANS";
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      line-height: 150%;
+    }
+    ol {
+      list-style: lower-alpha;
+      margin-bottom: 30px;
+      font-family: "DM SANS";
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      line-height: 150%;
+      margin-left: 20px;
+
+      li {
+        margin-top: 20px;
+        padding-left: 20px;
+      }
+    }
+  }
+}

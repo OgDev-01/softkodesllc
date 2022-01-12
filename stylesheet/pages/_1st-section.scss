@@ -1,0 +1,22 @@
+.p-a {
+  flex-direction: column;
+  align-items: flex-start;
+
+  .back {
+    width: 100%;
+
+    @media screen and (min-width: 44em) {
+      width: 80%;
+    }
+  }
+
+  .abt {
+    // width: 40%;
+    margin-top: 30px;
+
+    @media screen and (min-width: 44em) {
+      width: 40%;
+      margin-top: 50px;
+    }
+  }
+}

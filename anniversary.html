@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anniversary</title>
+    <link rel="stylesheet" href="./stylesheet/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Rubik&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome cdn linking -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Animate css linking sheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <!-- AOS animation linking -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="cursor-custom"></div>
+    <!-- <div class="cursor-custom"></div> -->
+    <div class="loading">
+      <div class="loading-container">
+        <p class="animate__animated wait">Softkodes is 2</p>
+        <h1 class="experience animate__animated" id="loadin">
+          Join us as we celebrate 2 years of excellence.
+          <!-- <span class="right animate__animated">Right Now</span> -->
+        </h1>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="percent">100%</div>
+      </div>
+    </div>
+    <div class="container-anniversary" id="my-confetti">
+      <div class="anni-head">
+        <a href="./index.html" id="our-logo"></a>
+        <a href="#" id="date"
+          >Event date: <span class="date">14th Aug 2021, 10:00am</span></a
+        >
+      </div>
+      <div class="section-wrap">
+        <div class="img-ani robo img-move">
+          <!-- <img class="refresh" src="/images/no-1.svg" alt="" /> -->
+        </div>
+        <div class="img-ani soft-ladies img-move">
+          <!-- <img class="refresh" src="/images/no-2.svg" alt="" /> -->
+        </div>
+        <div class="img-ani chi-chi img-move">
+          <!-- <img class="refresh" src="/images/no-4.svg" alt="" /> -->
+        </div>
+        <div class="img-ani fav img-move">
+          <!-- <img class="refresh" src="/images/no-10.svg" alt="" /> -->
+        </div>
+        <div class="img-ani sun img-move">
+          <!-- <img class="refresh" src="/images/no-5.svg" alt="" /> -->
+        </div>
+        <div class="img-ani robo-and-team img-move">
+          <!-- <img class="refresh" src="/images/team.svg" alt="" /> -->
+        </div>
+        <div class="img-ani tk img-move">
+          <!-- <img class="refresh" src="/images/tk.svg" alt="" /> -->
+        </div>
+        <div class="img-ani smiling img-move"></div>
+        <div class="img-ani innocent img-move"></div>
+        <div class="img-ani jess img-move"></div>
+      </div>
+      <div class="typewrite-wrap">
+        <p>
+          <span class="autoTyped" id="generator"></span
+          ><span class="blink typing">&nbsp;</span>
+        </p>
+      </div>
+      <a
+        href="https://www.youtube.com/channel/UCyElAgJRr6Pz1JK0FWV6PpQ"
+        id="calender"
+        target="_blank"
+        >Join Event Now</a
+      >
+      <div class="foot-head">
+        <a href="#" id="intro"
+          >Softkodes was founded in 2019. to celebrate 2 years in business, we
+          are sharing some of our priceless moments with you.</a
+        >
+
+        <a href="#" id="pause" onclick="confetti.pause()">Pause Confetti</a>
+      </div>
+    </div>
+
+    <script src="./Js/confetti.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Jquery mousewheel plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script> -->
+    <script src="./Js/main.js"></script>
+    <script src="/Js/loader.js"></script>
+    <script src="/Js/scroll.js"></script>
+    <!-- <script class="loco" src="/Js/locomotive.js"></script> -->
+
+    <!-- AOS init script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <script>
+      const textArray = [
+        "Softkodes was founded by a team of young Nigerians...",
+        " to showcase the creativity and tenacity of the young Nigerian mind.",
+        "Join us as we celebrate 2 years of excellence,",
+        "Creativity 😎",
+        "Innovation 🏰",
+        " Continuous Improvement and Uniqueness.",
+      ];
+      const typingDelay = 150;
+      const erasingDelay = 100;
+      const newTextDelay = 2000;
+      let textArrayIndex = 0;
+      let charIndex = 0;
+
+      const typedTextSpan = document.getElementById("generator");
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          typedTextSpan.textContent +=
+            textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } else {
+          setTimeout(erase, newTextDelay);
+        }
+      }
+      function erase() {
+        if (charIndex > 0) {
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(
+            0,
+            charIndex - 1
+          );
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } else {
+          textArrayIndex++;
+          if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+          setTimeout(type, typingDelay + 100);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(type, newTextDelay + 250);
+      });
+    </script>
+  </body>
+</html>

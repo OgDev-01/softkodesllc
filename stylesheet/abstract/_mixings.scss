@@ -1,0 +1,47 @@
+// See works button
+@mixin service-btn {
+  width: 239px;
+  height: 61px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+// @mixin number-count {
+//   font-family: "Playfair Display", serif;
+//   font-size: 100px;
+//   line-height: 133px;
+//   text-align: center;
+//   letter-spacing: -0.03em;
+//   opacity: 0.2;
+//   @media screen and (min-width: 44em) {
+//     font-family: "Playfair Display", serif;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 100px;
+//     line-height: 133px;
+//     text-align: center;
+//     letter-spacing: -0.03em;
+//     color: #000000;
+//     opacity: 0.2;
+//   }
+// }
+
+@mixin subhead {
+  font-size: 55px;
+  line-height: 150px;
+  // text-align: center;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  @media screen and (min-width: 44em) {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 110px;
+    line-height: 200px;
+    /* identical to box height */
+    text-align: left;
+    color: #000000;
+  }
+}

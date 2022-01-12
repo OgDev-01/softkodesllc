@@ -1,0 +1,91 @@
+.terms-wrap {
+  width: 100%;
+  padding: 50px 30px;
+  margin-top: 50px;
+
+  @media screen and(min-width: 44em) {
+    width: 100%;
+    padding: 50px 180px;
+    margin-top: 50px;
+  }
+  .terms-head {
+    h1 {
+      font-size: 6vw;
+      line-height: 130%;
+      width: 100%;
+      text-align: center;
+      font-family: "DM SANS";
+      margin-bottom: 50px;
+
+      @media screen and(min-width: 44em) {
+        font-size: 4vw;
+        line-height: 130%;
+        width: 100%;
+        text-align: center;
+        font-family: "DM SANS";
+        margin-bottom: 50px;
+      }
+    }
+  }
+  p {
+    font-family: "DM SANS";
+    font-size: 4vw;
+    line-height: 150%;
+    margin-bottom: 50px;
+    @media screen and(min-width:44em) {
+      font-family: "DM SANS";
+      font-size: 1.4vw;
+      line-height: 150%;
+      margin-bottom: 50px;
+    }
+  }
+  h2 {
+    font-family: "DM SANS";
+    font-size: 4.5vw;
+    margin-bottom: 20px;
+
+    @media screen and(min-width: 44em) {
+      font-family: "DM SANS";
+      font-size: 2vw;
+      margin-bottom: 20px;
+    }
+  }
+  ol {
+    list-style: lower-alpha;
+    li {
+      font-family: "DM SANS";
+      font-size: 4vw;
+      margin-bottom: 30px;
+
+      @media screen and(min-width: 44em) {
+        font-family: "DM SANS";
+        font-size: 1.3vw;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  ul {
+    li {
+      font-family: "DM SANS";
+      font-size: 4vw;
+      margin-bottom: 30px;
+
+      @media screen and(min-width: 44em) {
+        font-family: "DM SANS";
+        font-size: 1.4vw;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .warranty {
+    li {
+      font-size: 3.5vw;
+      letter-spacing: 1.2px;
+
+      @media screen and(min-width: 44em) {
+        font-size: 1.3vw;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}
